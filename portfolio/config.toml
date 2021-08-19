@@ -30,7 +30,7 @@ theme = "hugo-developer-portfolio"
     URL = "contact"
 
 [params]
-home = "Portfolio" # What you want the homepage to show up as in the menu bar
+home = "Home" # What you want the homepage to show up as in the menu bar
 # Meta data
 description = "Portfolio Kamnik Boštjan"
 author = "Boštjan Kamnik"
