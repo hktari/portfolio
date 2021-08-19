@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Kamnik Boštjan
+  title: 
 social:
   twitter: ""
   linkedin: bostjan-kamnik
@@ -18,12 +18,16 @@ about:
 skill:
   enable: true
   item:
-    - title: Xamarin Forms
+    - title: XamarinForms
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png
-      description: Worked on the ConnectLife application for the Gorenje IoT home appliances
-    - title: ASP.NET Core
+      description: Worked on the ConnectLife application for the Gorenje IoT home appliances https://en.connectlife.io/
+    - title: "ASP.NETCore"
       logo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
-      description: Backend for the mobile app [Veganko](https://play.google.com/store/apps/details?id=com.honeybunny.Veganko&hl=en_IN&gl=US)
+      description: 
+    - title: "Git"
+      logo: https://images.ctfassets.net/sw4ojjqn6qvl/79swPomCujhL79CaWj1Ms4/8a7cb2ee7fbd6cc3a74c2540e2886635/git-logo.svg
+      description: I use git with mostly with console. Except for resolving merge conflicts and viewing diffs
+    
 experience:
   enable: true
   item:
@@ -56,7 +60,7 @@ education:
       academy: Salzburg University of Applied Sciences
       image: https://www.fh-salzburg.ac.at/typo3conf/ext/fhs_main/Resources/Public/images/logo-icon.svg
 leadership:
-  enable: false
+  enable: true
   item:
     - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793280/logos/logos_yl_qozav6.webp
       title: Young Leader
