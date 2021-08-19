@@ -1,0 +1,46 @@
+baseURL = "http://example.org/" # TODO: add domain
+languageCode = "en-us"
+title = "Portfolio | Kamnik Boštjan"
+theme = "hugo-developer-portfolio"
+
+[params.plugins]
+    # CSS Plugins
+    [[params.plugins.css]]
+    URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"
+    # JS Plugins
+    [[params.plugins.js]]
+    URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"
+    [[params.plugins.js]]
+    URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"
+
+
+# navigation
+[menu]
+    [[menu.main]]
+    name = "About"
+    URL = "about"
+    [[menu.main]]
+    name = "Blog"
+    URL = "blog"
+    [[menu.main]]
+    name = "Portfolio"
+    URL = "portfolio"
+    [[menu.main]]
+    name = "Contact"
+    URL = "contact"
+
+[params]
+home = "Portfolio" # What you want the homepage to show up as in the menu bar
+# Meta data
+description = "Portfolio Kamnik Boštjan"
+author = "Boštjan Kamnik"
+
+
+  [params.contact]
+  formAction = "https://formspree.io/<Insert code>" # Add your formspree URL here to get emails
+
+  # This contains the contact information for the footer
+  [params.footer]
+  email = "mkamnikbostjan@gmail.com"
+  address = "Slovenj Gradec, Slovenia"
+#   googlemaps = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U"
