@@ -1,4 +1,4 @@
-baseURL = "http://example.org/" # TODO: add domain
+baseURL = "https://www.boka-place.com/"
 languageCode = "en-us"
 title = "Portfolio | Kamnik Boštjan"
 theme = "hugo-developer-portfolio"
