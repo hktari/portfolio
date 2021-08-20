@@ -9,7 +9,7 @@ title = "Estray"
 type = "post"
 
 [[tech]]
-logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/220px-Unity_Technologies_logo.svg.png"
+logo = "https://en.wikipedia.org/wiki/Unity_Technologies#/media/File:Unity_Technologies_logo.svg"
 name = "Unity3D"
 url = ""
 

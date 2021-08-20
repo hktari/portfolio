@@ -26,13 +26,13 @@ skill:
       description: 
     - title: "Git"
       logo: https://images.ctfassets.net/sw4ojjqn6qvl/79swPomCujhL79CaWj1Ms4/8a7cb2ee7fbd6cc3a74c2540e2886635/git-logo.svg
-      description: I use git with mostly with console. Except for resolving merge conflicts and viewing diffs
+      description: I use git mostly in the console. Except for resolving merge conflicts and viewing diffs
     - title: "Python"
       logo: https://brandlogos.net/wp-content/uploads/2020/12/python-logo.png
-      description: beginner to intermediate knowledge of python and jython
+      description: Beginner to intermediate knowledge of python and jython
     - title: "Unity3D"
-      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/220px-Unity_Technologies_logo.svg.png
-      description: used Unity during the course of my studies on a few projects. Also in a few personal projects.
+      logo: https://en.wikipedia.org/wiki/Unity_Technologies#/media/File:Unity_Technologies_logo.svg
+      description: Used Unity during the course of my studies on a few projects. Also in a few personal projects.
       
     
 experience:
