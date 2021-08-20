@@ -16,18 +16,19 @@ theme = "hugo-developer-portfolio"
 
 # navigation
 [menu]
-    [[menu.main]]
-    name = "About"
-    URL = "about"
-    [[menu.main]]
-    name = "Blog"
-    URL = "blog"
-    [[menu.main]]
-    name = "Portfolio"
-    URL = "portfolio"
+    # [[menu.main]]
+    # name = "About"
+    # URL = "about"
+    # [[menu.main]]
+    # name = "Blog"
+    # URL = "blog"
     [[menu.main]]
     name = "Contact"
     URL = "contact"
+    [[menu.main]]
+    name = "Portfolio"
+    URL = "portfolio"
+    
 
 [params]
 home = "Home" # What you want the homepage to show up as in the menu bar
@@ -37,7 +38,7 @@ author = "Boštjan Kamnik"
 
 
   [params.contact]
-  formAction = "https://formspree.io/<Insert code>" # Add your formspree URL here to get emails
+  formAction = "https://formspree.io/f/xvodvwyd" # Add your formspree URL here to get emails
 
   # This contains the contact information for the footer
   [params.footer]

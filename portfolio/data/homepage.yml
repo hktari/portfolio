@@ -1,6 +1,6 @@
 ---
 banner:
-  title: 
+  title: Kamnik Boštjan
 social:
   twitter: ""
   linkedin: bostjan-kamnik
@@ -10,7 +10,7 @@ social:
   instagram: ""
   gmail: mkamnikbostjan
 about:
-  enable: true
+  enable: false
   content: 
   button:
     btnText: 
@@ -27,6 +27,13 @@ skill:
     - title: "Git"
       logo: https://images.ctfassets.net/sw4ojjqn6qvl/79swPomCujhL79CaWj1Ms4/8a7cb2ee7fbd6cc3a74c2540e2886635/git-logo.svg
       description: I use git with mostly with console. Except for resolving merge conflicts and viewing diffs
+    - title: "Python"
+      logo: https://brandlogos.net/wp-content/uploads/2020/12/python-logo.png
+      description: beginner to intermediate knowledge of python and jython
+    - title: "Unity3D"
+      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/220px-Unity_Technologies_logo.svg.png
+      description: used Unity during the course of my studies on a few projects. Also in a few personal projects.
+      
     
 experience:
   enable: true
@@ -55,7 +62,7 @@ certifications:
 education:
   enable: true
   item:
-    - title: BSc Computer Science
+    - title: BSc Computer Science (Mixed Reality and Game Development)
       year: 2014 - 2017
       academy: Salzburg University of Applied Sciences
       image: https://www.fh-salzburg.ac.at/typo3conf/ext/fhs_main/Resources/Public/images/logo-icon.svg
@@ -66,7 +73,7 @@ leadership:
       title: Young Leader
       company: The Scout Association
       duration: September 2014 - July 2018
-portfolio:
-  filter:
-    - label: Web Dev
-      value: web-dev
+# portfolio:
+#   filter:
+#     # - label: Web Dev
+#     #   value: web-dev

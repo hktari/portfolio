@@ -16,3 +16,7 @@ url = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.sv
 I worked on the early demo and prototype applications developed in Xamarin.Forms for the ConnectLife IoT app. Consuming a REST and MQTT backend we developed for iOS and android devices. The app had remote monitoring and remote control capabilites for Gorenje, ATAG, ASKO home appliances.
 
 https://play.google.com/store/apps/details?id=com.hisense.juconnect.connectlife&hl=en_US&gl=US
+
+
+!["dashboard"](https://play-lh.googleusercontent.com/rXbSBs6kcwKHl_ZSZ6JGU-ImPX3mbt6pY9uAMejJzYtfLwezZLncAqLokWhp2XjmbFFG=w720-h310)
+!["dashboard"](https://play-lh.googleusercontent.com/gomVEJh3lnc8Q6m-m5Zaq-PuIN1sPoDU1GUpiD4NFC0f-9hzV2oGfcBrSHAlhRrwn74=w720-h310)
