@@ -31,8 +31,11 @@ skill:
       logo: https://brandlogos.net/wp-content/uploads/2020/12/python-logo.png
       description: Beginner to intermediate knowledge of python and jython
     - title: "Unity3D"
-      logo: https://en.wikipedia.org/wiki/Unity_Technologies#/media/File:Unity_Technologies_logo.svg
+      logo: /logos/unity.png
       description: Used Unity during the course of my studies on a few projects. Also in a few personal projects.
+    - title: "Arduino"
+      logo: /logos/arduino.png
+      description: 
       
     
 experience:
