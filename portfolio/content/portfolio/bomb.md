@@ -4,7 +4,7 @@ coders = []
 date = 2021-12-10T23:00:00Z
 description = "A toy bomb with timer, explosion and a defuse sequence"
 github = ["https://github.com/hktari/bomb"]
-image = "/images/bomb/bomb10.JPG"
+image = "/images/bomb/bomb12.jpeg"
 title = "Toy bomb"
 type = "post"
 
@@ -45,3 +45,7 @@ I've implemented two happy paths in defusing the bomb. If the first wire the pla
 
 
  ![](/images/bomb/bomb4.jpeg "All the electronics are soldered.")
+
+
+
+ ![](/images/bomb/bomb12.jpeg "The bomb is ready.")
