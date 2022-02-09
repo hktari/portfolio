@@ -10,7 +10,6 @@ type = "post"
 
 +++
 
-
 The idea started as we required a prop for a LARP game. I knew I wanted something "ticking", one of those led displays you see in movies, wires and an explosion. Also after the players had found the bomb, I've wanted them to work together in defusing the bomb. That's why I've added three wires on the top, which have to be cut in the right order to succsesfully stop the bomb.
 
 ### The materials
@@ -49,3 +48,6 @@ I've implemented two happy paths in defusing the bomb. If the first wire the pla
 
 
  ![](/images/bomb/bomb12.jpeg "The bomb is ready.")
+
+
+{{< video "/videos/bomb active.mp4" "my-5" >}}
