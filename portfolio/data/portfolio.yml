@@ -1,3 +1,13 @@
 filter:
-  # - label: Web Dev
-  #   value: web-dev
+  - 
+    label: Web Dev
+    value: web-dev
+  -
+    label: Mobile App
+    value: mobile-app
+  -
+    label: Arduino
+    value: arduino
+  - 
+    label: Games
+    value: game

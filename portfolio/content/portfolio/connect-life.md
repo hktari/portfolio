@@ -1,5 +1,5 @@
 +++
-categories = ["mobile-apps"]
+categories = ["mobile-app"]
 coders = []
 date = 2020-06-19T23:00:00Z
 description = "An IoT mobile app"

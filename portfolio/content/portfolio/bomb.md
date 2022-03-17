@@ -1,5 +1,5 @@
 +++
-categories = ["mobile-apps"]
+categories = ["arduino","game"]
 coders = []
 date = 2021-12-10T23:00:00Z
 description = "A toy bomb with timer, explosion and a defuse sequence"

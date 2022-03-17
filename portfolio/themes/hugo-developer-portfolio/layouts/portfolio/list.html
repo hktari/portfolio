@@ -6,7 +6,6 @@
             <ul class="uk-subnav uk-subnav-pill uk-subnav-divider">
                 <li uk-filter-control><a href="#">All</a></li>
                 {{ range .Site.Data.portfolio.filter }}
-
                 <li uk-filter-control="[data-tags*='{{.value}}']">
                     <a href="#">{{.label}}</a>
                 </li>
