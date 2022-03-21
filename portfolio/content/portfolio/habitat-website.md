@@ -1,7 +1,7 @@
 +++
 categories = ["web-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
+date = 2022-03-17T23:00:00Z
 description = "A website built in Wix for the Dog Hotel Habitat"
 github = []
 image = "/images/habitat-website/home-mobile.png"
