@@ -4,7 +4,7 @@ coders = []
 date = 2022-03-18T23:00:00Z
 description = "A toy car with accelerometer, LEDs and siren"
 github = ["https://github.com/hktari/toy-car"]                      
-image = "/images/toy-car/bomb12.jpeg"
+image = "/images/toy-car/06.jpg"
 title = "Toy car"
 type = "post"
 
