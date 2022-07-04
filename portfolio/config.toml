@@ -1,7 +1,7 @@
 baseURL = "https://www.boka-place.com/"
 languageCode = "en-us"
 title = "Portfolio | Kamnik Boštjan"
-theme = "hugo-developer-portfolio"
+theme = ""
 
 [params.plugins]
     # CSS Plugins
