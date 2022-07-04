@@ -11,120 +11,94 @@
 </head>
 
 <body>
-    <nav class="w3-content w3-center">
-        <ul class="w3-bar">
-            <li class="w3-bar-item">
-                <a class="w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#">Boštjan Kamnik
-            </a>
-            </li>
-            <li class="w3-bar-item ">
-                <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#portfolio">portfolio</a>
-            </li>
-            <li class="w3-bar-item ">
-                <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">contact</a>
-            </li>
-            <li class="w3-bar-item ">
-                <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">Let's work together !</a>
-            </li>
-        </ul>
-    </nav>
-    <div id="bookmark-side">
-        <!-- <img src="" alt="" class="img-side-move-in w3-brown"> -->
-        <img src="" alt="" class="web-dev-toggle-bookmark w3-animate-left w3-animate-opacity w3-orange">
-        <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide">
-    </div>
+    <header>
+        <nav class="w3-content w3-center">
+            <ul class="w3-bar">
+                <li class="w3-bar-item">
+                    <a class="w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#">Boštjan Kamnik
+                </a>
+                </li>
+                <li class="w3-bar-item ">
+                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#portfolio">portfolio</a>
+                </li>
+                <li class="w3-bar-item ">
+                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">contact</a>
+                </li>
+                <li class="w3-bar-item ">
+                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">Let's work together !</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="about">
-        <div class="w3-container">
-            <div class="w3-content">
-                <div class="w3-row">
-                    <div id="about-text" class="w3-col m5 w3-margin-right">
-                        <div class="web-dev-toggle-bookmark w3-animate-opacity">
-                            <h2>Web Developer</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+    <main>
+        <div id="bookmark-side">
+            <!-- <img src="" alt="" class="img-side-move-in w3-brown"> -->
+            <img src="" alt="" class="web-dev-toggle-bookmark w3-animate-left w3-animate-opacity w3-orange">
+            <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide">
+        </div>
+
+        <section id="about">
+            <div class="w3-container">
+                <div class="w3-content">
+                    <div class="w3-row">
+                        <div id="about-text" class="w3-col m5 w3-margin-right">
+                            <div class="web-dev-toggle-bookmark w3-animate-opacity">
+                                <h2>Web Developer</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
+                                    est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+                            </div>
+                            <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
+                                <h2>Electronics</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
+                                    est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+                            </div>
                         </div>
-                        <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
-                            <h2>Electronics</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+                        <div id="about-aside" class="w3-col m6">
+                            <img src="" alt="" class="w3-amber">
+                            <nav class="w3-content w3-center">
+                                <ul class="w3-bar">
+                                    <li class="w3-bar-item">
+                                        <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
+                                    </li>
+                                    <li class="w3-bar-item ">
+                                        <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
+                                    </li>
+                                    <li class="w3-bar-item ">
+                                    </li>
+                                    <li class="w3-bar-item ">
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                    </div>
-                    <div id="about-aside" class="w3-col m6">
-                        <img src="" alt="" class="w3-amber">
-                        <nav class="w3-content w3-center">
-                            <ul class="w3-bar">
-                                <li class="w3-bar-item">
-                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
-                                </li>
-                                <li class="w3-bar-item ">
-                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
-                                </li>
-                                <li class="w3-bar-item ">
-                                </li>
-                                <li class="w3-bar-item ">
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section id="portfolio">
-        <div class="w3-container w3-content">
-            <div class="w3-cell-row">
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+        <section id="portfolio">
+            <div class="w3-container w3-content">
+                <div class="w3-cell-row">
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+                </div>
             </div>
+        </section>
+        <div class="w3-content w3-right-align">
+            <h3>view more projects <a href="/projects">here</a> </h3>
         </div>
-    </section>
-    <section id="contact">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum illo error earum assumenda necessitatibus dolore nihil nemo ratione totam, in architecto voluptates odit ipsa, facere tempore dolor debitis officia distinctio dignissimos consequatur
-        natus eveniet. Placeat cumque, suscipit, doloribus recusandae eligendi, laborum facilis dolores vitae facere alias officiis dolore aut. Facilis aut necessitatibus iusto quos nam illo doloribus veniam ipsam. Ab illo numquam quasi provident ratione.
-        Blanditiis eaque modi, temporibus necessitatibus tempora, ut deleniti cupiditate id unde facilis itaque numquam! Temporibus reiciendis veniam quas et qui dolorem dolorum officiis doloremque quia, iusto illum delectus vel, sit voluptatum laudantium
-        quisquam hic debitis placeat, eveniet ducimus ex perspiciatis corporis? Pariatur ut obcaecati reprehenderit quas quibusdam illo beatae accusamus sequi eligendi perspiciatis labore quam voluptatum quod, dignissimos, explicabo aut placeat libero
-        distinctio, tempora harum ipsam quaerat officiis hic. Ut impedit in, laudantium sed voluptates veritatis inventore perspiciatis corrupti dignissimos nesciunt eligendi officia eos libero non pariatur. Doloremque quod minus numquam eligendi molestias
-        illum ea itaque, odit consectetur est asperiores laborum id ex incidunt veniam ducimus dolorum vel, deleniti vero error eum nostrum! Deserunt commodi dicta optio impedit odit accusantium officia dignissimos, ratione autem temporibus amet? Deserunt
-        incidunt quis, amet culpa modi cum maxime repellat tenetur debitis quasi harum beatae dicta. Rem veniam facere nam, voluptatum tenetur mollitia. Omnis nulla alias magni labore, dolores aliquid asperiores incidunt. Non voluptatum, voluptatem ab
-        assumenda quisquam provident similique illum molestiae obcaecati at odit illo magni explicabo officiis, veritatis reprehenderit. Ab iste hic aperiam, debitis necessitatibus distinctio ex consequuntur quis cumque eveniet mollitia dicta voluptatibus
-        asperiores nobis numquam quas veritatis reiciendis maiores, magni delectus non beatae? Voluptates tempore odit accusamus porro quis nesciunt esse optio corrupti eaque excepturi consequatur modi corporis aspernatur quae perferendis temporibus distinctio
-        maxime, repudiandae architecto debitis est doloribus. Libero consequatur tempore a consequuntur architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum illo error earum assumenda necessitatibus dolore nihil nemo ratione
-        totam, in architecto voluptates odit ipsa, facere tempore dolor debitis officia distinctio dignissimos consequatur natus eveniet. Placeat cumque, suscipit, doloribus recusandae eligendi, laborum facilis dolores vitae facere alias officiis dolore
-        aut. Facilis aut necessitatibus iusto quos nam illo doloribus veniam ipsam. Ab illo numquam quasi provident ratione. Blanditiis eaque modi, temporibus necessitatibus tempora, ut deleniti cupiditate id unde facilis itaque numquam! Temporibus reiciendis
-        veniam quas et qui dolorem dolorum officiis doloremque quia, iusto illum delectus vel, sit voluptatum laudantium quisquam hic debitis placeat, eveniet ducimus ex perspiciatis corporis? Pariatur ut obcaecati reprehenderit quas quibusdam illo beatae
-        accusamus sequi eligendi perspiciatis labore quam voluptatum quod, dignissimos, explicabo aut placeat libero distinctio, tempora harum ipsam quaerat officiis hic. Ut impedit in, laudantium sed voluptates veritatis inventore perspiciatis corrupti
-        dignissimos nesciunt eligendi officia eos libero non pariatur. Doloremque quod minus numquam eligendi molestias illum ea itaque, odit consectetur est asperiores laborum id ex incidunt veniam ducimus dolorum vel, deleniti vero error eum nostrum!
-        Deserunt commodi dicta optio impedit odit accusantium officia dignissimos, ratione autem temporibus amet? Deserunt incidunt quis, amet culpa modi cum maxime repellat tenetur debitis quasi harum beatae dicta. Rem veniam facere nam, voluptatum tenetur
-        mollitia. Omnis nulla alias magni labore, dolores aliquid asperiores incidunt. Non voluptatum, voluptatem ab assumenda quisquam provident similique illum molestiae obcaecati at odit illo magni explicabo officiis, veritatis reprehenderit. Ab iste
-        hic aperiam, debitis necessitatibus distinctio ex consequuntur quis cumque eveniet mollitia dicta voluptatibus asperiores nobis numquam quas veritatis reiciendis maiores, magni delectus non beatae? Voluptates tempore odit accusamus porro quis
-        nesciunt esse optio corrupti eaque excepturi consequatur modi corporis aspernatur quae perferendis temporibus distinctio maxime, repudiandae architecto debitis est doloribus. Libero consequatur tempore a consequuntur architecto. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Tempora illum illo error earum assumenda necessitatibus dolore nihil nemo ratione totam, in architecto voluptates odit ipsa, facere tempore dolor debitis officia distinctio dignissimos consequatur natus eveniet.
-        Placeat cumque, suscipit, doloribus recusandae eligendi, laborum facilis dolores vitae facere alias officiis dolore aut. Facilis aut necessitatibus iusto quos nam illo doloribus veniam ipsam. Ab illo numquam quasi provident ratione. Blanditiis
-        eaque modi, temporibus necessitatibus tempora, ut deleniti cupiditate id unde facilis itaque numquam! Temporibus reiciendis veniam quas et qui dolorem dolorum officiis doloremque quia, iusto illum delectus vel, sit voluptatum laudantium quisquam
-        hic debitis placeat, eveniet ducimus ex perspiciatis corporis? Pariatur ut obcaecati reprehenderit quas quibusdam illo beatae accusamus sequi eligendi perspiciatis labore quam voluptatum quod, dignissimos, explicabo aut placeat libero distinctio,
-        tempora harum ipsam quaerat officiis hic. Ut impedit in, laudantium sed voluptates veritatis inventore perspiciatis corrupti dignissimos nesciunt eligendi officia eos libero non pariatur. Doloremque quod minus numquam eligendi molestias illum
-        ea itaque, odit consectetur est asperiores laborum id ex incidunt veniam ducimus dolorum vel, deleniti vero error eum nostrum! Deserunt commodi dicta optio impedit odit accusantium officia dignissimos, ratione autem temporibus amet? Deserunt incidunt
-        quis, amet culpa modi cum maxime repellat tenetur debitis quasi harum beatae dicta. Rem veniam facere nam, voluptatum tenetur mollitia. Omnis nulla alias magni labore, dolores aliquid asperiores incidunt. Non voluptatum, voluptatem ab assumenda
-        quisquam provident similique illum molestiae obcaecati at odit illo magni explicabo officiis, veritatis reprehenderit. Ab iste hic aperiam, debitis necessitatibus distinctio ex consequuntur quis cumque eveniet mollitia dicta voluptatibus asperiores
-        nobis numquam quas veritatis reiciendis maiores, magni delectus non beatae? Voluptates tempore odit accusamus porro quis nesciunt esse optio corrupti eaque excepturi consequatur modi corporis aspernatur quae perferendis temporibus distinctio maxime,
-        repudiandae architecto debitis est doloribus. Libero consequatur tempore a consequuntur architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum illo error earum assumenda necessitatibus dolore nihil nemo ratione totam,
-        in architecto voluptates odit ipsa, facere tempore dolor debitis officia distinctio dignissimos consequatur natus eveniet. Placeat cumque, suscipit, doloribus recusandae eligendi, laborum facilis dolores vitae facere alias officiis dolore aut.
-        Facilis aut necessitatibus iusto quos nam illo doloribus veniam ipsam. Ab illo numquam quasi provident ratione. Blanditiis eaque modi, temporibus necessitatibus tempora, ut deleniti cupiditate id unde facilis itaque numquam! Temporibus reiciendis
-        veniam quas et qui dolorem dolorum officiis doloremque quia, iusto illum delectus vel, sit voluptatum laudantium quisquam hic debitis placeat, eveniet ducimus ex perspiciatis corporis? Pariatur ut obcaecati reprehenderit quas quibusdam illo beatae
-        accusamus sequi eligendi perspiciatis labore quam voluptatum quod, dignissimos, explicabo aut placeat libero distinctio, tempora harum ipsam quaerat officiis hic. Ut impedit in, laudantium sed voluptates veritatis inventore perspiciatis corrupti
-        dignissimos nesciunt eligendi officia eos libero non pariatur. Doloremque quod minus numquam eligendi molestias illum ea itaque, odit consectetur est asperiores laborum id ex incidunt veniam ducimus dolorum vel, deleniti vero error eum nostrum!
-        Deserunt commodi dicta optio impedit odit accusantium officia dignissimos, ratione autem temporibus amet? Deserunt incidunt quis, amet culpa modi cum maxime repellat tenetur debitis quasi harum beatae dicta. Rem veniam facere nam, voluptatum tenetur
-        mollitia. Omnis nulla alias magni labore, dolores aliquid asperiores incidunt. Non voluptatum, voluptatem ab assumenda quisquam provident similique illum molestiae obcaecati at odit illo magni explicabo officiis, veritatis reprehenderit. Ab iste
-        hic aperiam, debitis necessitatibus distinctio ex consequuntur quis cumque eveniet mollitia dicta voluptatibus asperiores nobis numquam quas veritatis reiciendis maiores, magni delectus non beatae? Voluptates tempore odit accusamus porro quis
-        nesciunt esse optio corrupti eaque excepturi consequatur modi corporis aspernatur quae perferendis temporibus distinctio maxime, repudiandae architecto debitis est doloribus. Libero consequatur tempore a consequuntur architecto.
-    </section>
+    </main>
+
+    <footer>
+        <div class="w3-content">
+            let's work together
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
