@@ -1,13 +1,18 @@
 'use strict'
 
 function onSidebarNavClick(sidebarItem) {
-    const bookmarkItems = document.querySelectorAll('.item-bookmark');
+    const elemToggleVal = sidebarItem.dataset.toggle;
+    const toggleId = sidebarItem.dataset.toggleId;
+
+    const bookmarkItems = document.querySelectorAll(`[class*="toggle-${toggleId}"]`);
+
     for (const item of bookmarkItems) {
-        console.log(item);
         item.classList.add('w3-hide');
     }
 
-    const bookmarkId = sidebarItem.dataset.toggle; 
-    const bookmarkElem = document.querySelector('#' + bookmarkId);
-    bookmarkElem.classList.toggle('w3-hide');
+
+    const toggleActiveElem = document.querySelectorAll(`[class*="${elemToggleVal}-toggle-${toggleId}"]`);
+    for (const elem of toggleActiveElem) {
+        elem.classList.toggle('w3-hide')
+    }
 }
