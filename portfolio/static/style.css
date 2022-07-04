@@ -81,23 +81,22 @@
 }
 
 /* --------------------------------- contact -------------------------------- */
-
-#contact {
+#portfolio::after {
     margin-top: 160px;
-    /* account for portfolio item translation */
+    content: '';
+    display: block;
 }
-
 
 /* medium */
 @media (max-width: 993px) {
-    #contact {
+    #portfolio::after {
         margin-top: 80px;
     }
 }
 
 /* small */
 @media (max-width: 600px) {
-    #contact {
+    #portfolio::after {
         margin-top: 0px;
     }
 
