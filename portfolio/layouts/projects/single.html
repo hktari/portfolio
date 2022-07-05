@@ -1,0 +1,37 @@
+{{ define "main" }}
+<style>
+    #navigation {
+        position: static;
+        background-image: none !important;
+        color: #4a4a4a;
+    }
+    
+    img {
+        border-radius: 7px;
+        width: 100%;
+        object-fit: contain;
+        margin: 15px 0;
+    }
+    
+    @media screen and (min-width:786px) {
+        img {
+            /* float: left; */
+            width: auto;
+            max-height: none;
+            max-height: 550px;
+            align-self: space-evenly;
+        }
+    }
+</style>
+
+<div class="container-fluid ">
+    <div class="mt-4 mt-md-5">
+        <div class="px-2 px-md-5">
+            <h1>{{.Title}}</h1>
+            <div class="d-flex flex-column">
+                {{.Content}}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

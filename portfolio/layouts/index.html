@@ -1,137 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+{{define "main"}}
+<div id="bookmark-side">
+    <!-- <img src="" alt="" class="img-side-move-in w3-brown"> -->
+    <img src="" alt="" class="web-dev-toggle-bookmark w3-animate-left w3-animate-opacity w3-orange">
+    <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide">
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boštjan Kamnik</title>
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px and max-width:993px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:600px)">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <script src="./jquery.js"></script>
-    <script src="./index.js"></script>
-</head>
-
-<body>
-    <!-- Sidebar -->
-    <div id="navSidebar" class="w3-sidebar w3-bar-block w3-black w3-center w3-padding w3-topbar w3-hide w3-animate-left">
-        <button onclick="toggleSidebarNav()" class="w3-button w3-xlarge w3-right">&times;</button>
-        <div class="w3-padding-top-64 w3-margin-top">
-            <a href="#" class="w3-bar-item w3-button w3-xlarge">projects</a>
-        </div>
-        <div class="w3-margin-top">
-            <a href="#" class="w3-bar-item w3-button w3-xlarge">contact</a>
+<section id="about">
+    <div id="mobile-img-about" class="w3-hide-medium w3-hide-large">
+        <img class="w3-mobile w3-amber" src="" alt="">
+    </div>
+    <div class="w3-container w3-content w3-section">
+        <div class="w3-row">
+            <div id="about-text" class="w3-col m6">
+                <div class="web-dev-toggle-bookmark w3-animate-opacity">
+                    <h2>Web Developer</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus est
+                        voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+                </div>
+                <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
+                    <h2>Electronics</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus est
+                        voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
+                </div>
+            </div>
+            <div id="about-aside" class="w3-col m6 w3-hide-small">
+                <div class="img-wrapper">
+                    <img src="" alt="" class="img-about w3-amber web-dev-toggle-bookmark w3-animate-opacity">
+                    <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity">
+                    <img class="img-overlay-right" src="/images/decorative/paint-vert.png" alt="">
+                </div>
+                <nav class="w3-content w3-center">
+                    <ul class="w3-bar">
+                        <li class="w3-bar-item">
+                            <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
+                        </li>
+                        <li class="w3-bar-item ">
+                            <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
+                        </li>
+                        <li class="w3-bar-item ">
+                        </li>
+                        <li class="w3-bar-item ">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
-    <header id="header-mobile" class="w3-hide-medium w3-hide-large">
-        <nav id="mobile-nav" class="w3-top">
-            <div class="w3-topbar w3-border-black w3-display-container w3-container">
-                <h1>kamnik boštjan</h1>
-                <button class="w3-button w3-display-right w3-margin-right" onclick="toggleSidebarNav()"><i class="fa-solid fa-bars w3-xxlarge"></i></button>
-            </div>
-        </nav>
-    </header>
-    <header id="header-primary" class="w3-hide-small">
-        <nav class="w3-content w3-center">
-            <ul class="w3-bar ">
-                <li class="w3-bar-item">
-                    <a class="w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#">Boštjan Kamnik
-                </a>
-                </li>
-                <li class="w3-bar-item ">
-                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black " href="#portfolio">portfolio</a>
-                </li>
-                <li class="w3-bar-item ">
-                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">contact</a>
-                </li>
-                <li class="w3-bar-item ">
-                    <a class="w3-text-red w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black" href="#contact">Let's work together !</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+</section>
 
-    <main>
-        <div id="bookmark-side">
-            <!-- <img src="" alt="" class="img-side-move-in w3-brown"> -->
-            <img src="" alt="" class="web-dev-toggle-bookmark w3-animate-left w3-animate-opacity w3-orange">
-            <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide">
+<section id="portfolio">
+    <div class="w3-container w3-content w3-section">
+        <div class="w3-cell-row">
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
         </div>
-
-        <section id="about">
-            <div id="mobile-img-about" class="w3-hide-medium w3-hide-large">
-                <img class="w3-mobile w3-amber" src="" alt="">
-            </div>
-            <div class="w3-container w3-content w3-section">
-                <div class="w3-row">
-                    <div id="about-text" class="w3-col m6">
-                        <div class="web-dev-toggle-bookmark w3-animate-opacity">
-                            <h2>Web Developer</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
-                        </div>
-                        <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
-                            <h2>Electronics</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
-                        </div>
-                    </div>
-                    <div id="about-aside" class="w3-col m6 w3-hide-small">
-                        <div class="img-wrapper">
-                            <img src="" alt="" class="img-about w3-amber web-dev-toggle-bookmark w3-animate-opacity">
-                            <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity">
-                            <img class="img-overlay-right" src="/images/decorative/paint-vert.png" alt="">
-                        </div>
-                        <nav class="w3-content w3-center">
-                            <ul class="w3-bar">
-                                <li class="w3-bar-item">
-                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
-                                </li>
-                                <li class="w3-bar-item ">
-                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
-                                </li>
-                                <li class="w3-bar-item ">
-                                </li>
-                                <li class="w3-bar-item ">
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <div class="w3-container w3-content w3-section">
-                <div class="w3-cell-row">
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                    <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-                </div>
-            </div>
-        </section>
-        <div class="w3-content w3-right-align">
-            <h3>view more projects <a href="/projects">here</a> </h3>
-        </div>
-    </main>
-
-    <footer>
-        <div class="w3-content w3-center">
-            let's work together
-            <a href="" class="w3-btn"> <i class="fa-brands fa-linkedin w3-xxlarge"></i>
-            </a>
-            <a href="" class="w3-btn"> <i class="fa-solid fa-envelope w3-xxlarge"></i>
-        </div>
-    </footer>
-</body>
-
-</html>
+    </div>
+</section>
+<div class="w3-content w3-right-align">
+    <h3>view more projects <a href="/projects">here</a> </h3>
+</div>
+{{end}}

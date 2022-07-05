@@ -1,0 +1,23 @@
+<div id="main">
+    <div class="container-fluid py-3">
+        <section id="art-zone">
+            <div class="row row-cols-1 row-cols-md-3 py-2 g-4">
+                {{range .Pages}}
+                <div class="col">
+                    <div class="card">
+                        <img src="{{.Params.Image | absURL}}" alt="">
+                        <a class="card-block stretched-link text-decoration-none" href="{{.Permalink | relURL}}">
+                            <div class="card-body">
+                                <h3 class="card-title">{{.Title}}</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </section>
+    </div>
+
+    <br class="d-none d-md-inline-block">
+    <br class="d-none d-md-inline-block">
+</div>
