@@ -65,49 +65,50 @@
         </div>
 
         <section id="about">
-            <div class="w3-container">
-                <div class="w3-content">
-                    <div class="w3-row">
-                        <div id="about-text" class="w3-col m6">
-                            <div class="web-dev-toggle-bookmark w3-animate-opacity">
-                                <h2>Web Developer</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                    est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
-                            </div>
-                            <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
-                                <h2>Electronics</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
-                                    est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
-                            </div>
+            <div id="mobile-img-about" class="w3-hide-medium w3-hide-large">
+                <img class="w3-mobile w3-amber" src="" alt="">
+            </div>
+            <div class="w3-container w3-content w3-section">
+                <div class="w3-row">
+                    <div id="about-text" class="w3-col m6">
+                        <div class="web-dev-toggle-bookmark w3-animate-opacity">
+                            <h2>Web Developer</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
+                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
                         </div>
-                        <div id="about-aside" class="w3-col m6">
-                            <div class="img-wrapper">
-                                <img src="" alt="" class="img-about w3-amber web-dev-toggle-bookmark w3-animate-opacity">
-                                <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity">
-                                <img class="img-overlay-right" src="/images/decorative/paint-vert.png" alt="">
-                            </div>
-                            <nav class="w3-content w3-center">
-                                <ul class="w3-bar">
-                                    <li class="w3-bar-item">
-                                        <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
-                                    </li>
-                                    <li class="w3-bar-item ">
-                                        <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
-                                    </li>
-                                    <li class="w3-bar-item ">
-                                    </li>
-                                    <li class="w3-bar-item ">
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
+                            <h2>Electronics</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus
+                                est voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
                         </div>
+                    </div>
+                    <div id="about-aside" class="w3-col m6 w3-hide-small">
+                        <div class="img-wrapper">
+                            <img src="" alt="" class="img-about w3-amber web-dev-toggle-bookmark w3-animate-opacity">
+                            <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity">
+                            <img class="img-overlay-right" src="/images/decorative/paint-vert.png" alt="">
+                        </div>
+                        <nav class="w3-content w3-center">
+                            <ul class="w3-bar">
+                                <li class="w3-bar-item">
+                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
+                                </li>
+                                <li class="w3-bar-item ">
+                                    <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="electronics" data-toggle-id="bookmark">Electronics</button>
+                                </li>
+                                <li class="w3-bar-item ">
+                                </li>
+                                <li class="w3-bar-item ">
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="portfolio">
-            <div class="w3-container w3-content">
+            <div class="w3-container w3-content w3-section">
                 <div class="w3-cell-row">
                     <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
                     <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
