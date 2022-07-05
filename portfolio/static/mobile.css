@@ -1,3 +1,8 @@
+#primary{
+    /* height: 75px; */
+    background-color: teal;
+}
+
 #nav-menu-toggle {
     position: fixed;
     top: 0;
@@ -31,3 +36,12 @@
 .portfolio-item:nth-child(n) {
     transform: translateY(0px);
 }
+
+.nav-up{
+    display: none;
+}
+
+.nav-down{
+    display: block;
+}
+
