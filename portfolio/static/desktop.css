@@ -1,12 +1,3 @@
-/* #about {
-}
-
-#about-text {
-}
-
-#about-aside {
-} */
-
 /* ------------------------------ bookmark side ----------------------------- */
 #bookmark-side {
     height: 550px;
@@ -22,13 +13,19 @@
     height: 100%;
 }
 
+/* ------------------------------ about section ----------------------------- */
+#about {
+    /* account for bookmark*/
+    margin-left: 106px;
+}
+
+#about-text {
+    padding-right: 46px;
+}
+
 #about-aside img {
     height: 500px;
     width: 100%;
-    /* mask-image: url("images/decorative/paint-vert.png");
-    mask-mode: alpha;
-    mask-repeat: no-repeat;
-    mask-type: alpha; */
 }
 
 #about-aside nav ul {
@@ -41,9 +38,6 @@
 }
 
 .img-about {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -61,16 +55,10 @@
 /* -------------------------------- portfolio ------------------------------- */
 
 .portfolio-item {
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    margin-bottom: 16px; */
     padding: 16px;
 }
 
 .portfolio-item img {
-    /* width: 300px;
-    height: 375px; */
     width: 100%;
     min-height: 375px;
     background-color: brown;
@@ -87,21 +75,6 @@
 
 /* todo: mediaquery for item width on medium screens */
 
-@media (max-width: 993px) {
-    .portfolio-item:nth-child(2n - 1) {
-        transform: translateY(80px);
-    }
-
-    .portfolio-item:nth-child(2n) {
-        transform: translateY(0px);
-    }
-}
-
-@media (max-width: 600px) {
-    .portfolio-item:nth-child(n) {
-        transform: translateY(0px);
-    }
-}
 
 /* --------------------------------- contact -------------------------------- */
 #portfolio::after {
@@ -111,19 +84,7 @@
 }
 
 /* medium */
-@media (max-width: 993px) {
-    #portfolio::after {
-        margin-top: 80px;
-    }
-}
+@media (max-width: 993px) {}
 
 /* small */
-@media (max-width: 600px) {
-    #portfolio::after {
-        margin-top: 0px;
-    }
-
-    .portfolio-item:nth-child(n) {
-        transform: translateY(0px);
-    }
-}
+@media (max-width: 600px) {}

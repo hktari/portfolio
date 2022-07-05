@@ -1,0 +1,19 @@
+#about{
+    margin-left: 0px;
+}
+
+#bookmark-side {
+    display: none;
+}
+
+.portfolio-item:nth-child(n) {
+    transform: translateY(0px);
+}
+
+#portfolio::after {
+    margin-top: 0px;
+}
+
+.portfolio-item:nth-child(n) {
+    transform: translateY(0px);
+}
