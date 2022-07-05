@@ -30,14 +30,10 @@ function onSidebarNavClick(sidebarItem) {
 }
 
 
-function w3_open() {
+function toggleSidebarNav() {
     document.getElementById("navSidebar").classList.toggle('w3-hide');
+    document.getElementById("mobile-nav").classList.toggle('w3-top');
 }
-
-function w3_close() {
-    document.getElementById("navSidebar").classList.toggle('w3-hide');
-}
-
 
 /* -------------------------------- scrolling ------------------------------- */
 
