@@ -1,6 +1,11 @@
-#primary{
-    /* height: 75px; */
+#mobile-nav div{
     background-color: teal;
+}
+
+#header-mobile:after{
+    display: block;
+    content: '';    
+    margin-top: 95px;
 }
 
 #nav-menu-toggle {
