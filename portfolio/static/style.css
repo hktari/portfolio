@@ -25,6 +25,10 @@
 #about-aside img {
     height: 500px;
     width: 100%;
+    /* mask-image: url("images/decorative/paint-vert.png");
+    mask-mode: alpha;
+    mask-repeat: no-repeat;
+    mask-type: alpha; */
 }
 
 #about-aside nav ul {
@@ -32,10 +36,27 @@
     display: flex;
 }
 
+.img-wrapper {
+    position: relative;
+}
 
+.img-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.img-overlay-right {
+    margin-left: 0 auto;
+    object-fit: contain;
+    object-position: 100% 0%;
+}
 
 /* -------------------------------- portfolio ------------------------------- */
-#portfolio .item-wrapper {}
 
 .portfolio-item {
     /* margin-left: auto;
