@@ -1,23 +1,19 @@
-<div id="main">
-    <div class="container-fluid py-3">
-        <section id="art-zone">
-            <div class="row row-cols-1 row-cols-md-3 py-2 g-4">
-                {{range .Pages}}
-                <div class="col">
-                    <div class="card">
-                        <img src="{{.Params.Image | absURL}}" alt="">
-                        <a class="card-block stretched-link text-decoration-none" href="{{.Permalink | relURL}}">
-                            <div class="card-body">
-                                <h3 class="card-title">{{.Title}}</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                {{end}}
-            </div>
-        </section>
-    </div>
+{{define "main"}}
 
-    <br class="d-none d-md-inline-block">
-    <br class="d-none d-md-inline-block">
-</div>
+<section class="w3-content w3-container w3-section">
+    {{range .Pages}}
+    <div class="w3-col l4 m6 w3-mobile w3-padding-large">
+        <a href="{{.Permalink | relURL}}" class="card-text">
+            <div class="w3-card w3-hover-shadow">
+                <img class="w3-image" src="{{.Params.Image | absURL}}" alt="">
+                <div class="w3-container w3-center">
+                    <h3 class="card-title">{{.Title}}</h3>
+                    <hr/>
+                    <p class="w3-opacity"> {{.Params.Description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{end}}
+</section>
+{{end}}

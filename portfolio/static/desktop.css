@@ -83,8 +83,9 @@
     display: block;
 }
 
-/* medium */
-@media (max-width: 993px) {}
 
-/* small */
-@media (max-width: 600px) {}
+/* ------------------------------ projects page ----------------------------- */
+
+.card-text {
+    text-decoration: none;
+}
