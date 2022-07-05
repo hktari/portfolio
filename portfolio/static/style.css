@@ -41,9 +41,9 @@
 }
 
 .img-about {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -51,7 +51,9 @@
 }
 
 .img-overlay-right {
-    margin-left: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
     object-fit: contain;
     object-position: 100% 0%;
 }
