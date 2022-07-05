@@ -16,3 +16,12 @@ function onSidebarNavClick(sidebarItem) {
         elem.classList.toggle('w3-hide')
     }
 }
+
+
+function w3_open() {
+    document.getElementById("navSidebar").classList.toggle('w3-hide');
+}
+
+function w3_close() {
+    document.getElementById("navSidebar").classList.toggle('w3-hide');
+}

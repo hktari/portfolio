@@ -1,4 +1,18 @@
-#about{
+#nav-menu-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    z-index: 1;
+}
+
+#navSidebar {
+    z-index: 2;
+    width: 100%;
+}
+
+
+#about {
     margin-left: 0px;
 }
 
