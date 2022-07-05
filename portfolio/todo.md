@@ -1,5 +1,5 @@
 # TODO
-- scrolling
+- mobile header animation
 
 - projects page
 
