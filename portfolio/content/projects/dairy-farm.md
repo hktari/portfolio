@@ -6,7 +6,6 @@ description = "A dairy farm simulator created in Unity3D"
 github = []
 image = "/images/portfolio/help_feeding_02.PNG"
 title = "Dairy Farm"
-type = "post"
 
 [[tech]]
 logo = "https://en.wikipedia.org/wiki/Unity_Technologies#/media/File:Unity_Technologies_logo.svg"

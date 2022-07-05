@@ -6,7 +6,6 @@ description = "A co-op game "
 github = []
 image = "https://img.itch.zone/aW1hZ2UvMjY3MTg1LzEyODgyMTcuanBn/original/LVbMgW.jpg"
 title = "Estray"
-type = "post"
 
 [[tech]]
 logo = "https://en.wikipedia.org/wiki/Unity_Technologies#/media/File:Unity_Technologies_logo.svg"

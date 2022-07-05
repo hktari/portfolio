@@ -6,7 +6,6 @@ description = "A toy car with accelerometer, LEDs and siren"
 github = ["https://github.com/hktari/toy-car"]                      
 image = "/images/toy-car/06.jpg"
 title = "Toy car"
-type = "post"
 
 +++
 
