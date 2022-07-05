@@ -1,4 +1,16 @@
 'use strict'
+document.getScroll = function() {
+    if (window.pageYOffset != undefined) {
+        return [pageXOffset, pageYOffset];
+    } else {
+        var sx, sy, d = document,
+            r = d.documentElement,
+            b = d.body;
+        sx = r.scrollLeft || b.scrollLeft || 0;
+        sy = r.scrollTop || b.scrollTop || 0;
+        return [sx, sy];
+    }
+}
 
 function onSidebarNavClick(sidebarItem) {
     const elemToggleVal = sidebarItem.dataset.toggle;
@@ -25,3 +37,50 @@ function w3_open() {
 function w3_close() {
     document.getElementById("navSidebar").classList.toggle('w3-hide');
 }
+
+
+/* -------------------------------- scrolling ------------------------------- */
+
+$(document).ready(function() {
+    // HIDE HEADER ON SCROLL
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('#primary').outerHeight();
+
+    $(window).scroll(function(event) {
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        console.log('ping')
+        
+        let [, st] = document.getScroll()
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
+        
+        console.log('pong')
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $('#primary').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+                $('#primary').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+})
