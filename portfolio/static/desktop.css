@@ -55,14 +55,16 @@
 /* -------------------------------- portfolio ------------------------------- */
 
 .portfolio-item {
-    padding: 16px;
+    padding: 0px 16px;
+    margin: 16px 0;
+    /* max-height: 375px; */
+    height: 400px;
 }
 
-.portfolio-item img {
+/* .portfolio-item img {
     width: 100%;
-    min-height: 375px;
     background-color: brown;
-}
+} */
 
 .portfolio-item:nth-child(3n - 2) {
     transform: translateY(160px);
@@ -86,6 +88,6 @@
 
 /* ------------------------------ projects page ----------------------------- */
 
-.card-text {
+.link-plain-text {
     text-decoration: none;
 }

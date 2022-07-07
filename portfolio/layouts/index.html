@@ -51,12 +51,20 @@
 <section id="portfolio">
     <div class="w3-container w3-content w3-section">
         <div class="w3-cell-row">
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
-            <div class="portfolio-item w3-col m6 l4 w3-center"><img src="" alt=""></div>
+            {{ range first 9 (where .Site.RegularPages "Type" "projects") }}
+            <div class="portfolio-item w3-col m6 l4 w3-center">
+                <a href="{{.Permalink | relURL}}" class="link-plain-text">
+                    <div class="w3-card w3-hover-shadow" style="height: 100%;width: 100%;">
+                        <img class="" style="object-fit: cover; height: 65%;width: 100%;" src="{{.Params.Image | absURL}}" alt="">
+                        <div class="w3-center" style="height: 35%; overflow: hidden;">
+                            <h3 class="card-title">{{.Title}}</h3>
+                            <hr/>
+                            <p class="w3-opacity"> {{.Params.Description}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{end}}
         </div>
     </div>
 </section>

@@ -3,7 +3,7 @@
 <section class="w3-content w3-container w3-section">
     {{range .Pages}}
     <div class="w3-col l4 m6 w3-mobile w3-padding-large">
-        <a href="{{.Permalink | relURL}}" class="card-text">
+        <a href="{{.Permalink | relURL}}" class="link-plain-text">
             <div class="w3-card w3-hover-shadow">
                 <img class="w3-image" src="{{.Params.Image | absURL}}" alt="">
                 <div class="w3-container w3-center">
