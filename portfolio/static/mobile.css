@@ -55,3 +55,12 @@
 .nav-down{
     display: block;
 }
+
+
+/* --------------------------- single project page -------------------------- */
+
+
+.single-project img{
+    max-width: 100%;
+    margin: 0 auto;
+}

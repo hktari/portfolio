@@ -27,21 +27,18 @@ It has been very giving experience, during which I also got to design and create
 It is made in Wix and the logos, images and text have been supplied by the owner the dog hotel.
 
 ### Mobile website
-![Homepage](/images/habitat-website/home-mobile.png "Homepage")
 
-![Contact page](/images/habitat-website/contact-mobile.png "Contact page")
+{{< figure src="/images/habitat-website/home-mobile.png" alt="Home Page" >}}
 
-![Courses page](/images/habitat-website/course-mobile.png "Courses page")
-
-![FAQ](/images/habitat-website/faq-mobile.png "FAQ")
-
+{{< figure src="/images/habitat-website/contact-mobile.png" alt="Contact Page" >}}
+{{< figure src="/images/habitat-website/course-mobile.png" alt="Courses Page" >}}
+{{< figure src="/images/habitat-website/faq-mobile.png" alt="FAQ Page" >}}
 
 ### Desktop website
-![Home desktop](/images/habitat-website/home-page.png "Home desktop")
 
-![rescue-page](/images/habitat-website/rescue-page.png "rescue-page")
-
-![contact-page](/images/habitat-website/contact-page.png "contact-page")
+{{< figure src="/images/habitat-website/home-page.png" alt="Home Page on desktop" >}}
+{{< figure src="/images/habitat-website/rescue-page.png" alt="Rescues Page on desktop" >}}
+{{< figure src="/images/habitat-website/contact-page.png" alt="Contacts Page on desktop" >}}
 
 
 
