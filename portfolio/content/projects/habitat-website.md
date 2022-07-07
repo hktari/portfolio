@@ -6,6 +6,7 @@ description = "A website built in Wix for the Dog Hotel Habitat"
 github = []
 image = "/images/habitat-website/home-mobile.png"
 title = "Habitat Wix Website"
+websiteUrl = "https://www.habitat.com.hr"
 
 [[tech]]
 logo = "/logos/wix.png"

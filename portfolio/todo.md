@@ -1,10 +1,31 @@
 # TODO
+
+## HOME PAGE
+
+
+## DESKTOP
+- single project page
+- style nav
+
+## TABLET
+- home page features projects
+
+## MOBILE
 - mobile header animation
+- single project page
 
-- projects page
-
+## GENERAL
 - add images and text
 
 - add cms
 
 - publish
+
+- meta tags
+
+- choose colors
+- choose font
+
+- optimize images
+
+- expand on contact section

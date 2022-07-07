@@ -113,3 +113,12 @@
 .link-plain-text {
     text-decoration: none;
 }
+
+/* --------------------------- single project page -------------------------- */
+
+.single-project img{
+    /* float: right; */
+    max-height: 550px;
+    margin: 16px;
+    /* clear: right; */
+}
