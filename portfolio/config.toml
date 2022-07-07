@@ -24,7 +24,7 @@ home = "Home" # What you want the homepage to show up as in the menu bar
 # Meta data
 description = "Portfolio Kamnik Boštjan"
 author = "Boštjan Kamnik"
-
+featuredProjectsCount = 6
 
   [params.contact]
   formAction = "https://formspree.io/f/xvodvwyd" # Add your formspree URL here to get emails

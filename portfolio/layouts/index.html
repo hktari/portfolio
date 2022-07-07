@@ -51,7 +51,7 @@
 <section id="portfolio">
     <div class="w3-container w3-content w3-section">
         <div class="w3-cell-row">
-            {{ range first 9 (where .Site.RegularPages "Type" "projects") }}
+            {{ range first .Site.Params.featuredProjectsCount (where .Site.RegularPages "Type" "projects") }}
             <div class="portfolio-item translate-vertical w3-col m6 l4">
                 <a href="{{.Permalink | relURL}}" class="link-plain-text">
                     <div class="card w3-center">
@@ -68,7 +68,9 @@
         </div>
     </div>
 </section>
+{{if gt (len .Site.RegularPages) .Site.Params.featuredProjectsCount}}
 <div class="w3-content w3-right-align">
     <h3>view more projects <a href="/projects">here</a> </h3>
 </div>
+{{end}}
 {{end}}
