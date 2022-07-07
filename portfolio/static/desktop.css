@@ -57,8 +57,36 @@
 .portfolio-item {
     padding: 0px 16px;
     margin: 16px 0;
-    /* max-height: 375px; */
-    height: 400px;
+    height: 490px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+    object-fit: cover;
+    height: 65%;
+    width: 100%;
+}
+
+.card-text-wrapper {
+    /* min-height: 250px; */
+    height: 35%;
+}
+
+.card-title{
+    padding-top: 10px;
+}
+
+.card-text-wrapper p {
+    padding: 10px;
 }
 
 /* .portfolio-item img {
