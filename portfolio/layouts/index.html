@@ -52,7 +52,7 @@
     <div class="w3-container w3-content w3-section">
         <div class="w3-cell-row">
             {{ range first 9 (where .Site.RegularPages "Type" "projects") }}
-            <div class="portfolio-item w3-col m6 l4">
+            <div class="portfolio-item translate-vertical w3-col m6 l4">
                 <a href="{{.Permalink | relURL}}" class="link-plain-text">
                     <div class="card w3-center">
                         <img class="card-img" src="{{.Params.Image | absURL}}" alt="">

@@ -77,7 +77,6 @@
 }
 
 .card-text-wrapper {
-    /* min-height: 250px; */
     height: 35%;
 }
 
@@ -89,16 +88,11 @@
     padding: 10px;
 }
 
-/* .portfolio-item img {
-    width: 100%;
-    background-color: brown;
-} */
-
-.portfolio-item:nth-child(3n - 2) {
+.translate-vertical:nth-child(3n - 2) {
     transform: translateY(160px);
 }
 
-.portfolio-item:nth-child(3n - 1) {
+.translate-vertical:nth-child(3n - 1) {
     transform: translateY(80px);
 }
 
