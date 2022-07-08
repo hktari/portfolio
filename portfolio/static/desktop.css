@@ -174,10 +174,11 @@
     /* color: hsl(26, 43%, 100%); */
 }
 
-.contact-details-social{
+.contact-details-social {
     display: flex;
     justify-content: start;
-    margin-left: -16px; /* account for button padding */
+    margin-left: -16px;
+    /* account for button padding */
 }
 
 /* ------------------------------ projects page ----------------------------- */
@@ -211,4 +212,20 @@ p {
 .player-wrapper {
     width: 50%;
     margin: auto
+}
+
+
+/* --------------------------------- footer --------------------------------- */
+
+footer {
+    background-color: rgb(65, 67, 65);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+footer small {
+    align-self: center;
+    justify-self: center;
+    color: rgba(255, 255, 255, 0.25);
 }
