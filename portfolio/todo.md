@@ -4,7 +4,6 @@
 
 
 ## DESKTOP
-- single project page
 - style nav
 
 ## TABLET
@@ -17,7 +16,7 @@
 ## GENERAL
 - add images and text
 
-- add cms
+- add cms ??
 
 - publish
 

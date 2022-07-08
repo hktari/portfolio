@@ -10,10 +10,11 @@
     color: #ff4a57 !important;
 }
 
-.no-space-top{
+.no-space-top {
     margin-top: 0px;
     padding-top: 0px;
 }
+
 /* ------------------------------ bookmark side ----------------------------- */
 #bookmark-side {
     height: 550px;
@@ -128,6 +129,56 @@
     display: block;
 }
 
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.contact-img-wrapper {
+    flex-basis: 35%;
+}
+
+.contact-img-wrapper img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-details {
+    position: relative;
+    display: flex;
+    flex-basis: 65%;
+    justify-content: center;
+}
+
+.contact-details .contact-bg {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.contact-details h2 {
+    color: hsl(26, 43%, 100%);
+    font-weight: 600;
+}
+
+.contact-details-item span {
+    margin-left: 8px;
+    /* color: hsl(26, 43%, 100%); */
+}
+
+.contact-details-social{
+    display: flex;
+    justify-content: start;
+    margin-left: -16px; /* account for button padding */
+}
 
 /* ------------------------------ projects page ----------------------------- */
 
