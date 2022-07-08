@@ -1,11 +1,11 @@
 {{define "main"}}
 <div id="bookmark-side">
-    <!-- <img src="" alt="" class="img-side-move-in w3-brown"> -->
-    <img src="" alt="" class="web-dev-toggle-bookmark w3-animate-left w3-animate-opacity w3-orange">
-    <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide">
+        <img src="/images/about/color-blocks.webp"  alt="" class="web-dev-toggle-bookmark w3-animate-left" >
+    <!-- <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide"> -->
 </div>
 
-<section id="about">
+
+<section id="about" class="w3-padding-top-48">
     <div id="mobile-img-about" class="w3-hide-medium w3-hide-large">
         <img class="w3-mobile w3-amber" src="" alt="">
     </div>
@@ -13,23 +13,25 @@
         <div class="w3-row">
             <div id="about-text" class="w3-col m6">
                 <div class="web-dev-toggle-bookmark w3-animate-opacity">
-                    <h2>Web Developer</h2>
+                    <h2 class="no-space-top">Web Developer</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus est
                         voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
                 </div>
-                <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
+                <!-- <div class="electronics-toggle-bookmark w3-animate-opacity w3-hide">
                     <h2>Electronics</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus esse nesciunt consectetur vero eligendi! Fugit, quisquam exercitationem non delectus natus rem! Hic quam quaerat non, obcaecati placeat necessitatibus est
                         voluptatum voluptates quasi doloremque dignissimos maiores ipsa in labore, sint eius totam recusandae temporibus explicabo dolorem qui nostrum reiciendis dolore?</p>
-                </div>
+                </div> -->
             </div>
             <div id="about-aside" class="w3-col m6 w3-hide-small">
                 <div class="img-wrapper">
-                    <img src="" alt="" class="img-about w3-amber web-dev-toggle-bookmark w3-animate-opacity">
-                    <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity">
+                    <img src="/images/about/laptop.jpg" alt="" class="img-about web-dev-toggle-bookmark w3-animate-opacity">
+                    <!-- <img src="" alt="" class="img-about w3-light-blue w3-hide electronics-toggle-bookmark w3-animate-opacity"> -->
                     <img class="img-overlay-right" src="/images/decorative/paint-vert.png" alt="">
                 </div>
-                <nav class="w3-content w3-center">
+
+                <!-- about section navigation in case of more items than 1 -->
+                <!-- <nav class="w3-content w3-center">
                     <ul class="w3-bar">
                         <li class="w3-bar-item">
                             <button class="w3-button" onclick="onSidebarNavClick(this)" data-toggle="web-dev" data-toggle-id="bookmark">Web Developer</button>
@@ -42,13 +44,13 @@
                         <li class="w3-bar-item ">
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
         </div>
     </div>
 </section>
 
-<section id="portfolio">
+<section id="portfolio" class="w3-padding-top-48">
     <div class="w3-container w3-content w3-section">
         <div class="w3-cell-row">
             {{ range first .Site.Params.featuredProjectsCount (where .Site.RegularPages "Type" "projects") }}

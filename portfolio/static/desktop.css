@@ -1,3 +1,19 @@
+.text-bold {
+    font-weight: 600;
+}
+
+.w3-hover-border-orange {
+    color: #ffcb8d;
+}
+
+.w3-text-red {
+    color: #ff4a57 !important;
+}
+
+.no-space-top{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 /* ------------------------------ bookmark side ----------------------------- */
 #bookmark-side {
     height: 550px;
@@ -11,6 +27,9 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    /* opacity: 0.75; */
+    filter: opacity(75%);
+    animation-duration: 0.5s !important;
 }
 
 /* ------------------------------ about section ----------------------------- */
@@ -35,6 +54,8 @@
 
 .img-wrapper {
     position: relative;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .img-about {
@@ -80,7 +101,7 @@
     height: 35%;
 }
 
-.card-title{
+.card-title {
     padding-top: 10px;
 }
 
@@ -116,9 +137,27 @@
 
 /* --------------------------- single project page -------------------------- */
 
-.single-project img{
+.single-project img {
     /* float: right; */
     max-height: 550px;
+    max-width: 100%;
     margin: 16px;
+    float: left;
     /* clear: right; */
+}
+
+.single-project h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    clear: left;
+    padding-top: 16px;
+}
+
+.player-wrapper {
+    width: 50%;
+    margin: auto
 }

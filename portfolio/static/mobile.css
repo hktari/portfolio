@@ -64,3 +64,9 @@
     max-width: 100%;
     margin: 0 auto;
 }
+
+/* TODO: fix video */
+#player-wrapper video{
+    width: 100%;
+    margin: 0px -32px;
+}
