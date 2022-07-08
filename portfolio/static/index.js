@@ -1,5 +1,5 @@
 'use strict'
-document.getScroll = function() {
+document.getScroll = function () {
     if (window.pageYOffset != undefined) {
         return [pageXOffset, pageYOffset];
     } else {
@@ -37,18 +37,18 @@ function toggleSidebarNav() {
 
 /* -------------------------------- scrolling ------------------------------- */
 
-$(document).ready(function() {
+$(document).ready(function () {
     // HIDE HEADER ON SCROLL
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('#mobile-nav').outerHeight();
 
-    $(window).scroll(function(event) {
+    $(window).scroll(function (event) {
         didScroll = true;
     });
 
-    setInterval(function() {
+    setInterval(function () {
         if (didScroll) {
             hasScrolled();
             didScroll = false;
@@ -57,13 +57,13 @@ $(document).ready(function() {
 
     function hasScrolled() {
         console.log('ping')
-        
+
         let [, st] = document.getScroll()
 
         // Make sure they scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
-        
+
         console.log('pong')
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
@@ -80,3 +80,17 @@ $(document).ready(function() {
         lastScrollTop = st;
     }
 })
+
+
+
+/* ------------------------------- navigation effects ------------------------------- */
+
+function navMouseEntered() {
+    document.querySelector('.nav-bg-img-wrapper img').classList.add('bg-focused');
+    console.log('enter');
+}
+
+function navMouseLeft() {
+    console.log('left');
+    document.querySelector('.nav-bg-img-wrapper img').classList.remove('bg-focused');
+}

@@ -1,18 +1,47 @@
+
 .text-bold {
     font-weight: 600;
-}
-
-.w3-hover-border-orange {
-    color: #ffcb8d;
-}
-
-.w3-text-red {
-    color: #ff4a57 !important;
 }
 
 .no-space-top {
     margin-top: 0px;
     padding-top: 0px;
+}
+
+/* ----------------------------------- nav ---------------------------------- */
+.nav-bg-img-wrapper {
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nav-bg-img-wrapper img {
+    filter: opacity(15%) grayscale();
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-item:hover {
+    color: hsl(26, 43%, 100%)!important;
+    border-bottom: 6px solid #4a4a4a !important;
+}
+
+.nav-item-active{
+    color: hsl(356, 100%, 45%);
+    border-bottom: 6px solid rgb(255, 196, 120) !important;
+}
+
+.nav-item{
+    /* border-bottom-color: hsl(120, 2%, 5%); */
+    /* border-bottom: 6px solid rgb(61, 60, 60) !important; */
+}   
+.bg-focused {
+    filter: opacity(45%) !important;
 }
 
 /* ------------------------------ bookmark side ----------------------------- */
@@ -30,7 +59,7 @@
     height: 100%;
     /* opacity: 0.75; */
     filter: opacity(75%);
-    animation-duration: 0.5s !important;
+    animation-duration: 0.5s;
 }
 
 /* ------------------------------ about section ----------------------------- */

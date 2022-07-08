@@ -20,22 +20,27 @@
     </nav>
 </header>
 <header id="header-primary" class="w3-hide-small w3-animate-top" style="position: relative;">
-    <div class="" style="overflow: hidden; z-index: -1; position: absolute; top: 0px; left: 0; right: 0; bottom: 0; ">
-        <img src="/images/about/bricks-blue.webp" alt="" style="filter: opacity(15%) grayscale(); object-fit: cover; width: 100%; height: 100%;">
+    <div class="nav-bg-img-wrapper">
+        <img src="/images/about/bricks-red.jpg" alt="">
     </div>
     <nav class="w3-content w3-center">
         <ul class="w3-bar ">
             <li class="w3-bar-item">
                 <!-- TODO: active item is red -->
-                <a class="text-bold {{if .Page.IsHome }} w3-text-red {{else }} w3-text-grey {{end}} w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange" href="/">Boštjan Kamnik
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
+                class="text-bold w3-button w3-hover-none nav-item 
+                {{if .Page.IsHome }} nav-item-active {{end}} " href="/">Boštjan Kamnik
                 </a>
             </li>
-            <li class="w3-bar-item ">
-                <a class="text-bold {{if .Page.IsSection }} w3-text-red {{else }} w3-text-grey {{end}} w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange" href="/projects">projects</a>
+            <!-- <li class="w3-bar-item ">
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
+                class="text-bold {{if .Page.IsSection }} w3-text-red {{else }} w3-text-grey {{end}} 
+                w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-color w3-text-hover-color" href="/projects">projects</a>
             </li>
             <li class="w3-bar-item ">
-                <a class="text-bold w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange" href="/#contact">contact</a>
-            </li>
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
+                class="text-bold w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange w3-hover-border-color w3-text-hover-color" href="/#contact">contact</a>
+            </li> -->
         </ul>
     </nav>
 </header>
