@@ -2,19 +2,20 @@
 
 ## HOME PAGE
 
-
-## DESKTOP
-- style nav
+## single project page
+- active nav item
 
 ## TABLET
 - home page features projects
 
 ## MOBILE
+- style nav and header
+- layout contact page
 - mobile header animation
 - single project page
 
 ## GENERAL
-- add images and text
+- add text
 
 - add cms ??
 
@@ -22,9 +23,6 @@
 
 - meta tags
 
-- choose colors
 - choose font
 
 - optimize images
-
-- expand on contact section

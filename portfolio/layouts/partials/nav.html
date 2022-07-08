@@ -27,20 +27,17 @@
         <ul class="w3-bar ">
             <li class="w3-bar-item">
                 <!-- TODO: active item is red -->
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
-                class="text-bold w3-button w3-hover-none nav-item 
-                {{if .Page.IsHome }} nav-item-active {{end}} " href="/">Boštjan Kamnik
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button w3-hover-none nav-item 
+                {{if .Page.IsHome }} nav-item-active {{end}}" href="/">Boštjan Kamnik
                 </a>
             </li>
-            <!-- <li class="w3-bar-item ">
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
-                class="text-bold {{if .Page.IsSection }} w3-text-red {{else }} w3-text-grey {{end}} 
-                w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-color w3-text-hover-color" href="/projects">projects</a>
+            <li class="w3-bar-item ">
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button w3-hover-none nav-item 
+                {{if .Page.IsSection }} nav-item-active {{end}}" href="/projects">projects</a>
             </li>
             <li class="w3-bar-item ">
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" 
-                class="text-bold w3-text-grey w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange w3-hover-border-color w3-text-hover-color" href="/#contact">contact</a>
-            </li> -->
+                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button w3-hover-none nav-item" href="/#contact">contact</a>
+            </li>
         </ul>
     </nav>
 </header>
