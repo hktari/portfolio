@@ -1,6 +1,6 @@
 {{define "main"}}
 <div id="bookmark-side">
-        <img src="/images/about/color-blocks.webp"  alt="" class="web-dev-toggle-bookmark w3-animate-left" >
+    <img src="/images/about/color-blocks.webp" alt="" class="web-dev-toggle-bookmark w3-animate-left">
     <!-- <img src="" alt="" class="electronics-toggle-bookmark w3-animate-left w3-animate-opacity w3-brown w3-hide"> -->
 </div>
 
@@ -70,9 +70,34 @@
         </div>
     </div>
 </section>
+
 {{if gt (len .Site.RegularPages) .Site.Params.featuredProjectsCount}}
 <div class="w3-content w3-right-align">
     <h3>view more projects <a href="/projects">here</a> </h3>
 </div>
 {{end}}
+
+<section id="contact" class="w3-section">
+    <div class="w3-row w3-content">
+        <div class="w3-col l4">
+            <div style="border-radius: 4px; height: 325px; overflow: hidden; border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                <img src="/images/about/bkamnik-profile.jpg" alt="" style="object-fit: cover; height: 100%; width: 100%;">
+            </div>
+        </div>
+        <div class="w3-col l8">
+            <div style="position:relative; overflow: hidden;">
+                <img src="/images/about/red-n-orange.jpg" alt="" style="z-index: -1; position: absolute; left: 0; top: 0; bottom: 0; right: 0; object-fit:cover;">
+                <div class="w3-container w3-row-padding">
+                    <div class="w3-col l4 w3-center">
+                        <div style="border-radius: 4px; padding:5px 10px;  display: inline-block; margin:0 auto; position: relative; overflow: hidden;">
+                            <div class="w3-white w3-opacity" style="z-index: -1; position: absolute; left: 0; top: 0; right: 0; bottom: 0;"></div>
+                            <h3 class="w3-text-red text-bold">let's work together !</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {{end}}
