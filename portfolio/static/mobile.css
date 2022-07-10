@@ -1,13 +1,14 @@
-#mobile-nav div{
-    background-color: darkred;
+#mobile-nav > div{
+    background-color: #d84755;
     color: white;
-    height: 80px;
+    height: 95px;
+    padding-right: 8;
 }
 
 #header-mobile:after{
     display: block;
     content: '';    
-    margin-top: 80px;
+    margin-top: 95px;
 }
 
 #nav-menu-toggle {
@@ -26,6 +27,9 @@
 /* ---------------------------------- about --------------------------------- */
 #mobile-img-about img{
     height: 100px;
+    /* transform: rotateZ(90deg); */
+    object-fit: cover;
+    filter: opacity(75%) saturate(80%);
 }
 
 #about {
