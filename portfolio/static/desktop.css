@@ -19,7 +19,8 @@
 }
 
 .nav-bg-img-wrapper img {
-    filter: opacity(15%) grayscale();
+    filter: grayscale();
+    opacity: 0.15;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -42,7 +43,14 @@
 }
 
 .bg-focused {
-    filter: opacity(45%) !important;
+    filter: none !important;
+    opacity: 0.45 !important;
+}
+
+.nav-bg-img-wrapper img {
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier();
 }
 
 /* ------------------------------ bookmark side ----------------------------- */
