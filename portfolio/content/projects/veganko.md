@@ -6,6 +6,7 @@ description = "An community driven managed database in a mobile app"
 github = []
 image = "https://play-lh.googleusercontent.com/g5Dlamg9pmSEh-5ChEYWdd_eJYEv39UtSvt4V0B_KDZuNagQk40e1lvs0ozbkGFOlFQ=s180"
 title = "Veganko"
+draft = true
 
 [[tech]]
 logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png"

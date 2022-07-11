@@ -6,7 +6,7 @@ description = "A toy car with accelerometer, LEDs and siren"
 github = ["https://github.com/hktari/toy-car"]                      
 image = "/images/toy-car/06.jpg"
 title = "Toy car"
-
+draft = true
 +++
 
 So I needed a present for my 2 year old nephew. And as his interest was basically all about cars at that moment, it of course had to be a toy car. After having looked around the Baby Center store for a bit I decided on a medium sized police jeep. Having inspected it through the packaging, I knew that it could be taken apart and that maybe I could pimp it a little - in hopes of making it just a bit more interesting for the little guy, which had at this point already amassed a huge collection of toys. 

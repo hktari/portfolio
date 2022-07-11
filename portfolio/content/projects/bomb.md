@@ -4,6 +4,7 @@ description = "A toy bomb with timer, explosion and a defuse sequence"
 github = ["https://github.com/hktari/bomb"]
 image = "/images/bomb/bomb12.jpeg"
 title = "Toy bomb"
+draft = true
 
 +++
 

@@ -6,6 +6,7 @@ description = "An IoT mobile app"
 github = []
 image = "https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/ec/34/ed/ec34ed18-6904-966e-011e-6ac5f3d4f011/source/512x512bb.jpg"
 title = "ConnectLife"
+draft = true
 
 [[tech]]
 logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png"
