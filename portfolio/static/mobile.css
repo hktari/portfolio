@@ -1,14 +1,19 @@
+/* ----------------------------------- nav ---------------------------------- */
+
+:root{
+    --header-height: 95px;
+}
 #mobile-nav>div {
     background-color: #d84755;
     color: white;
-    height: 95px;
+    height: var(--header-height);
     padding-right: 8;
 }
 
 #header-mobile:after {
     display: block;
     content: '';
-    margin-top: 95px;
+    margin-top: var(--header-height);
 }
 
 #nav-menu-toggle {
@@ -24,6 +29,10 @@
     width: 100%;
 }
 
+.no-scroll{
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: clip;
+}
 /* ---------------------------------- about --------------------------------- */
 #mobile-img-about img {
     height: 100px;
