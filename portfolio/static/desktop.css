@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 .text-bold {
     font-weight: 600;
 }
@@ -71,7 +80,7 @@
     filter: opacity(75%) saturate(80%);
     animation-duration: 0.5s;
     animation-delay: 0.15s;
-    animation-fill-mode: backwards ;
+    animation-fill-mode: backwards;
 }
 
 /* ------------------------------ about section ----------------------------- */
@@ -213,7 +222,8 @@
     right: 0;
     object-fit: cover;
 }
-.contact-container .bg-img{
+
+.contact-container .bg-img {
     width: 100%;
     height: 100%;
     content: '';
@@ -281,7 +291,31 @@ p {
 
 /* --------------------------------- footer --------------------------------- */
 
+:root{
+    --footer-height: 50px;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: calc(-1 * var(--footer-height));
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.page-wrap:after {
+    height: var(--footer-height);
+}
+
 footer {
+    background: orange;
+}
+
+footer {
+    height: var(--footer-height);
     background-color: #202020;
     text-align: center;
     padding: 10px;
