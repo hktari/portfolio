@@ -9,8 +9,6 @@
 - home page features projects
 
 ## MOBILE
-- style nav and header
-- layout contact page
 - mobile header animation
 
 ## GENERAL

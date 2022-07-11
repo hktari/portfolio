@@ -1,5 +1,5 @@
 <!-- {{ printf "%#v" .Title }} -->
-<div id="navSidebar" class="w3-sidebar w3-bar-block w3-black w3-center w3-padding w3-topbar w3-hide w3-animate-left">
+<div id="navSidebar" class="w3-sidebar w3-bar-block w3-black w3-center w3-padding w3-hide w3-animate-left">
     <div class="w3-padding-top-32 w3-margin-top">
         <a href="/" class="w3-bar-item w3-button w3-xlarge">home</a>
     </div>
@@ -15,7 +15,10 @@
         <div class="w3-topbar w3-border-black w3-cell-row w3-container">
             <h1 class="w3-cell w3-cell-middle">{{.Params.Title}}</h1>
             <div class="w3-cell w3-cell-middle w3-right-align menu-btn">
-                <button class="w3-button " onclick="toggleSidebarNav()"><i class="fa-solid fa-bars w3-xxlarge"></i></button>
+                <button id="toggle-nav-mobile-btn" class="w3-button " onclick="toggleSidebarNav()">
+                    <i class="fa-solid fa-bars w3-xxlarge w3-animate-opacity"></i>
+                    <i class="fa-solid fa-close w3-xxlarge w3-hide w3-animate-opacity"></i>
+                </button>
             </div>
         </div>
     </nav>

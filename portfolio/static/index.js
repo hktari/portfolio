@@ -33,6 +33,10 @@ function onSidebarNavClick(sidebarItem) {
 function toggleSidebarNav() {
     document.getElementById("navSidebar").classList.toggle('w3-hide');
     document.body.classList.toggle('no-scroll');
+    for (const icon of document.querySelectorAll('#toggle-nav-mobile-btn i')) {
+        console.log(icon);
+        icon.classList.toggle('w3-hide');
+    }
 }
 
 /* -------------------------------- scrolling ------------------------------- */
