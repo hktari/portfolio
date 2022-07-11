@@ -178,6 +178,7 @@
     flex-direction: row;
     overflow: hidden;
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
 .contact-img-wrapper {

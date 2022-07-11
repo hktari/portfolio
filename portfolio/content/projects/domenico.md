@@ -1,6 +1,6 @@
 ---
 categories: ['web-dev']
-title: "Domenico"
+title: "Eco Camp"
 description: "A static website for an eco camp situated in Albania"
 date: 2022-07-11T10:16:51+02:00
 draft: false
