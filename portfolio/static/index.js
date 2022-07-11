@@ -12,36 +12,13 @@ document.getScroll = function () {
     }
 }
 
-function onSidebarNavClick(sidebarItem) {
-    const elemToggleVal = sidebarItem.dataset.toggle;
-    const toggleId = sidebarItem.dataset.toggleId;
-
-    const bookmarkItems = document.querySelectorAll(`[class*="toggle-${toggleId}"]`);
-
-    for (const item of bookmarkItems) {
-        item.classList.add('w3-hide');
-    }
-
-
-    const toggleActiveElem = document.querySelectorAll(`[class*="${elemToggleVal}-toggle-${toggleId}"]`);
-    for (const elem of toggleActiveElem) {
-        elem.classList.toggle('w3-hide')
-    }
-}
-
-
-function toggleSidebarNav() {
-    document.getElementById("navSidebar").classList.toggle('w3-hide');
-    document.body.classList.toggle('no-scroll');
-    for (const icon of document.querySelectorAll('#toggle-nav-mobile-btn i')) {
-        console.log(icon);
-        icon.classList.toggle('w3-hide');
-    }
-}
-
 /* -------------------------------- scrolling ------------------------------- */
 
 $(document).ready(function () {
+    for (const linkElem of document.querySelectorAll('#sidebar-mobile a')) {
+          linkElem.onclick = navItemClickedMobile;
+    } 
+
     // HIDE HEADER ON SCROLL
     var didScroll;
     var lastScrollTop = 0;
@@ -97,4 +74,40 @@ function navMouseEntered() {
 function navMouseLeft() {
     console.log('left');
     document.querySelector('.nav-bg-img-wrapper img').classList.remove('bg-focused');
+}
+
+
+/* -------------------------------- side bar -------------------------------- */
+
+function onSidebarNavClick(sidebarItem) {
+    const elemToggleVal = sidebarItem.dataset.toggle;
+    const toggleId = sidebarItem.dataset.toggleId;
+
+    const bookmarkItems = document.querySelectorAll(`[class*="toggle-${toggleId}"]`);
+
+    for (const item of bookmarkItems) {
+        item.classList.add('w3-hide');
+    }
+
+
+    const toggleActiveElem = document.querySelectorAll(`[class*="${elemToggleVal}-toggle-${toggleId}"]`);
+    for (const elem of toggleActiveElem) {
+        elem.classList.toggle('w3-hide')
+    }
+}
+
+/* ---------------------------- mobile navigation --------------------------- */
+function toggleSidebarNav() {
+    document.getElementById("sidebar-mobile").classList.toggle('w3-hide');
+    document.body.classList.toggle('no-scroll');
+    for (const icon of document.querySelectorAll('#toggle-nav-mobile-btn i')) {
+        console.log(icon);
+        icon.classList.toggle('w3-hide');
+    }    
+}
+
+// Close navigation when navigating inside the same url (e.g. using #contact)
+function navItemClickedMobile(ev){
+    console.log(ev);
+    toggleSidebarNav();
 }
