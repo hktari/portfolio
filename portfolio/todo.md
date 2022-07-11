@@ -12,12 +12,9 @@
 - style nav and header
 - layout contact page
 - mobile header animation
-- single project page
 
 ## GENERAL
 - add text
-
-- add cms ??
 
 - publish
 
@@ -26,3 +23,5 @@
 - choose font
 
 - optimize images
+
+- favicon
