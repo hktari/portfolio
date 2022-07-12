@@ -3,7 +3,6 @@
 ## HOME PAGE
 
 ## single project page
-- active nav item
 
 ## TABLET
 - home page features projects
