@@ -1,13 +1,13 @@
 # TODO
+- update text
 
 ## HOME PAGE
-
-## single project page
 
 ## TABLET
 ## MOBILE
 - mobile header animation
-
+- close btn hover efefct background color persists
+### single project page
+- increase text size
 ## GENERAL
-- publish
 - add slovenian
