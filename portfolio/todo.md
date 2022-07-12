@@ -12,5 +12,3 @@
 
 ## GENERAL
 - publish
-
-- optimize images
