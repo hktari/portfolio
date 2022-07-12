@@ -179,6 +179,7 @@ body {
     font-size: 1.2rem;
 }
 
+
 .translate-vertical:nth-child(3n - 2) {
     transform: translateY(160px);
 }
