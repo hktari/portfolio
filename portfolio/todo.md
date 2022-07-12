@@ -13,8 +13,4 @@
 ## GENERAL
 - publish
 
-- meta tags
-
 - optimize images
-
-- favicon
