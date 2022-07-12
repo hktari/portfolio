@@ -12,13 +12,9 @@
 - mobile header animation
 
 ## GENERAL
-- add text
-
 - publish
 
 - meta tags
-
-- choose font
 
 - optimize images
 

@@ -22,6 +22,16 @@ body {
     padding-top: 0px;
 }
 
+.btn-text{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-text:hover{
+    color: white;
+    background-color: #202020;
+}
+
 /* ----------------------------------- nav ---------------------------------- */
 .nav-bg-img-wrapper {
     overflow: hidden;
