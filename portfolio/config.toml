@@ -1,6 +1,6 @@
-baseURL = "https://www.boka-place.com/"
+baseURL = "https://www.bostjankamnik.com/"
 languageCode = "en-us"
-title = "Portfolio | Kamnik Boštjan"
+title = "Kamnik Boštjan"
 theme = ""
 
 # navigation
@@ -21,16 +21,4 @@ theme = ""
 
 [params]
 home = "Home" # What you want the homepage to show up as in the menu bar
-# Meta data
-description = "Portfolio Kamnik Boštjan"
-author = "Boštjan Kamnik"
 featuredProjectsCount = 6
-
-  [params.contact]
-  formAction = "https://formspree.io/f/xvodvwyd" # Add your formspree URL here to get emails
-
-  # This contains the contact information for the footer
-  [params.footer]
-  email = "mkamnikbostjan@gmail.com"
-  address = "Slovenj Gradec, Slovenia"
-#   googlemaps = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwbHYJaUqfEgRK0Ui9dVGimc&key=AIzaSyAE_4rVAKux_DSPcb_OdSRDaovtPOSk_3U"
