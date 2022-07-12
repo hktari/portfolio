@@ -4,12 +4,12 @@ coders = []
 date = 2022-03-17T23:00:00Z
 description = "A website built in Wix for the Dog Hotel Habitat"
 github = []
-image = "/images/habitat-website/home-mobile.png"
-title = "Habitat Wix Website"
+image = "/images/habitat-website/home-mobile.webp"
+title = "Dog Hotel"
 websiteUrl = "https://www.habitat.com.hr"
 
 [[tech]]
-logo = "/logos/wix.png"
+logo = "/logos/wix.webp"
 name = "Wix"
 url = ""
 
@@ -28,16 +28,16 @@ It is made in Wix and the logos, images and text have been supplied by the owner
 
 ## Mobile website
 
-{{< figure src="/images/habitat-website/home-mobile.png" alt="Home Page" >}}
-{{< figure src="/images/habitat-website/contact-mobile.png" alt="Contact Page" >}}
-{{< figure src="/images/habitat-website/course-mobile.png" alt="Courses Page" >}}
-{{< figure src="/images/habitat-website/faq-mobile.png" alt="FAQ Page" >}}
+{{< figure src="/images/habitat-website/home-mobile.webp" alt="Home Page" >}}
+{{< figure src="/images/habitat-website/contact-mobile.webp" alt="Contact Page" >}}
+{{< figure src="/images/habitat-website/course-mobile.webp" alt="Courses Page" >}}
+{{< figure src="/images/habitat-website/faq-mobile.webp" alt="FAQ Page" >}}
 
 ## Desktop website
 
-{{< figure src="/images/habitat-website/home-page.png" alt="Home Page on desktop" >}}
-{{< figure src="/images/habitat-website/rescue-page.png" alt="Rescues Page on desktop" >}}
-{{< figure src="/images/habitat-website/contact-page.png" alt="Contacts Page on desktop" >}}
+{{< figure src="/images/habitat-website/home-page.webp" alt="Home Page on desktop" >}}
+{{< figure src="/images/habitat-website/rescue-page.webp" alt="Rescues Page on desktop" >}}
+{{< figure src="/images/habitat-website/contact-page.webp" alt="Contacts Page on desktop" >}}
 
 
 
