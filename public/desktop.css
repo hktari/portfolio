@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,900&family=Jost:wght@300&family=Poiret+One&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Barlow', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.no-space-top {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* ----------------------------------- nav ---------------------------------- */
+.nav-bg-img-wrapper {
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.nav-bg-img-wrapper img {
+    filter: grayscale();
+    opacity: 0.15;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier();
+}
+
+.nav-item:hover {
+    color: hsl(26, 43%, 100%) !important;
+    border-bottom: 6px solid hsl(26, 43%, 100%) !important;
+}
+
+.nav-item {
+    border-bottom: 6px solid #4a4a4a !important;
+    color: #4a4a4a;
+}
+
+.nav-item-active {
+    color: hsl(356, 100%, 45%);
+    border-bottom: 6px solid rgb(255, 196, 120) !important;
+}
+
+.bg-focused {
+    filter: none !important;
+    opacity: 0.45 !important;
+}
+
+#header-primary {
+    animation-fill-mode: backwards;
+    animation-delay: 0.35s;
+}
+
+/* ------------------------------ bookmark side ----------------------------- */
+#bookmark-side {
+    height: 550px;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bookmark-side img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.75; */
+    filter: opacity(75%) saturate(80%);
+    animation-duration: 0.5s;
+    animation-delay: 0.15s;
+    animation-fill-mode: backwards;
+}
+
+/* ------------------------------ about section ----------------------------- */
+#about {
+    /* account for bookmark*/
+    margin-left: 106px;
+}
+
+#about-text {
+    padding-right: 46px;
+}
+
+#about-aside img {
+    height: 500px;
+    width: 100%;
+}
+
+#about-aside nav ul {
+    background-color: hotpink;
+    display: flex;
+}
+
+.img-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.img-about {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.img-overlay-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+    object-position: 100% 0%;
+}
+
+/* -------------------------------- portfolio ------------------------------- */
+
+.portfolio-item {
+    padding: 0px 16px;
+    margin: 16px 0;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 100%;
+    /* width: 100%; */
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+    object-fit: cover;
+    height: 65%;
+    width: 100%;
+}
+
+.card-text-wrapper {
+    height: 35%;
+}
+
+.card-title {
+    padding-top: 10px;
+}
+
+.card-text-wrapper p {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+
+.translate-vertical:nth-child(3n - 2) {
+    transform: translateY(160px);
+}
+
+.translate-vertical:nth-child(3n - 1) {
+    transform: translateY(80px);
+}
+
+
+/* todo: mediaquery for item width on medium screens */
+
+
+/* --------------------------------- contact -------------------------------- */
+#portfolio::after {
+    margin-top: 160px;
+    content: '';
+    display: block;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contact-img-wrapper {
+    flex-basis: 35%;
+}
+
+.contact-img-wrapper img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-details {
+    position: relative;
+    display: flex;
+    flex-basis: 65%;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.contact-details .contact-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.contact-container .bg-img {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(100%);
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.contact-container .bg-color {
+    background-color: rgba(255, 230, 66, 0.884);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.contact-details h2 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.contact-details-item span {
+    margin-left: 14px;
+    font-size: 1.5rem;
+}
+
+.contact-details-social {
+    display: flex;
+    justify-content: start;
+    margin-left: -16px;
+    /* account for button padding */
+}
+
+/* ------------------------------ projects page ----------------------------- */
+
+.link-plain-text {
+    text-decoration: none;
+}
+
+/* --------------------------- single project page -------------------------- */
+
+.single-project img {
+    /* float: right; */
+    max-height: 550px;
+    max-width: 100%;
+    margin: 16px;
+    float: left;
+    /* clear: right; */
+}
+
+.single-project h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    clear: left;
+    padding-top: 16px;
+}
+
+.player-wrapper {
+    width: 50%;
+    margin: auto
+}
+
+
+/* --------------------------------- footer --------------------------------- */
+
+:root {
+    --footer-height: 50px;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: calc(-1 * var(--footer-height));
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.page-wrap:after {
+    height: var(--footer-height);
+}
+
+footer {
+    background: orange;
+}
+
+footer {
+    height: var(--footer-height);
+    background-color: #202020;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer small {
+    color: rgba(255, 255, 255, 0.5);
+}

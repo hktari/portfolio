@@ -1,0 +1,19 @@
+{{define "main"}}
+
+<section class="w3-content w3-container w3-section w3-padding-top-24">
+    {{range .Pages}}
+    <div class="portfolio-item w3-col m6 l4">
+        <a href="{{.Permalink | relURL}}" class="link-plain-text">
+            <div class="card w3-center">
+                <img class="card-img" src="{{.Params.Image | absURL}}" alt="">
+                <div class="card-text-wrapper">
+                    <h3 class="card-title">{{.Title}}</h3>
+                    <hr/>
+                    <p class="w3-opacity"> {{.Params.Description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{end}}
+</section>
+{{end}}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../inspire"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../clients/domenico-web-v2"
+		}
+	],
+	"settings": {}
+}
