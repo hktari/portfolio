@@ -52,10 +52,6 @@ body {
     transition-timing-function: cubic-bezier();
 }
 
-.nav-item:hover {
-    color: #4a4a4a;
-    border-bottom: 6px solid #4a4a4a !important;
-}
 
 .nav-item {
     border-bottom: 6px solid #4a4a4a3b !important;
@@ -77,6 +73,12 @@ body {
 #header-primary {
     animation-fill-mode: backwards;
     animation-delay: 0.35s;
+}
+
+nav ul li .nav-item:hover{
+    background-color: rgba(230, 230, 230, 0.4) !important;
+    color: #4a4a4a;
+    border-bottom: 6px solid #4a4a4a !important;
 }
 
 /* ------------------------------ bookmark side ----------------------------- */
@@ -308,7 +310,7 @@ p {
     padding-top: 16px;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
