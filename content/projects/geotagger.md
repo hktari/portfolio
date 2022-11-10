@@ -4,6 +4,7 @@ categories: ['web-dev']
 description: "A simple geotagging app with leaderboards"
 image: images/geotagger/logo.webp
 websiteUrl: https://geotagger.click/
+github: [https://github.com/hktari/skillup-02-guess-location-frontend, https://github.com/hktari/skillup-02-guess-location-backend]
 date: 2022-10-03T13:54:50+02:00
 draft: false
 ---

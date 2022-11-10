@@ -3,11 +3,16 @@
     <h1>{{.Title}}</h1>
     <div class="project-details">
         {{with .Params.github}}
+            <h3>github</h3>
             {{with index . 0}}
-            <a target="_blank" href="{{.}}">github</a>
+            <a target="_blank" href="{{.}}">frontend</a>
+            {{end}}
+            {{with index . 1}}
+            <a target="_blank" href="{{.}}">backend</a>
             {{end}}
         {{end}}
         {{with .Params.websiteUrl}}
+        <h3>website</h3>
         <a target="_blank" href="{{.}}">{{.}}</a>
         {{end}}
     </div>
