@@ -10,6 +10,7 @@ const util = require('util');
 
 // Define the template for blog post
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
+const projectPageTemplate = path.resolve(`./src/templates/project-template.js`)
 
 const createMarkdownPages = async (contentType, componentType, createContext, { graphql, actions, reporter }) => {
 
@@ -75,6 +76,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     }, { graphql, actions, reporter })
 
+  await createMarkdownPages(
+    'project',
+    projectPageTemplate,
+    () => { }
+    , { graphql, actions, reporter })
 
 }
 
