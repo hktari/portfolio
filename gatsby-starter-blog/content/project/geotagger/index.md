@@ -22,12 +22,12 @@ The frontend is deployed on netlify.
 
 ## Mobile website
 
-{{< figure src="/images/geotagger/geotagger-mobile-04.webp" alt="Home Page" >}}
+{{< figure src="./geotagger-mobile-04.webp" alt="Home Page" >}}
 
-{{< figure src="/images/geotagger/geotagger-mobile-01.webp" alt="Guess Page" >}}
-{{< figure src="/images/geotagger/geotagger-mobile-02.webp" alt="Profile Page" >}}
-{{< figure src="/images/geotagger/geotagger-mobile-03.webp" alt="Login Page" >}}
-{{< figure src="/images/geotagger/geotagger-mobile-06.webp" alt="Leaderboard Page" >}}
+{{< figure src="./geotagger-mobile-01.webp" alt="Guess Page" >}}
+{{< figure src="./geotagger-mobile-02.webp" alt="Profile Page" >}}
+{{< figure src="./geotagger-mobile-03.webp" alt="Login Page" >}}
+{{< figure src="./geotagger-mobile-06.webp" alt="Leaderboard Page" >}}
 
 
 

@@ -4,7 +4,7 @@ coders = []
 date = 2022-03-18T23:00:00Z
 description = "A toy car with accelerometer, LEDs and siren"
 github = ["https://github.com/hktari/toy-car"]                      
-image = "/images/toy-car/06.jpg"
+image = "./06.jpg"
 title = "Toy car"
 draft = true
 +++
@@ -27,21 +27,21 @@ The idea was to attach blue and red leds to the roof, and white leds on the fron
 
 I had fairly quickly assembled a basic prototype on a breadboard. The car had three states: OFF, STARTING UP (cool police siren audio), RUNNING (idle), MOVING (accelerometer x-axis is above certain threshold). The only thing I had to fiddle around a little with was finding the right library for the mpu 6050, as well as fiddling around with the RST pin - which I ended up not using because otherwise the thing would stop working after a while.
 
-![](/images/toy-car/03.jpeg "car")
+![](./03.jpeg "car")
 
 The biggest issue was fitting all 20 something wires inside the already tight casing of the car. That required some trial and error. Drilling and sanding the interior parts to fiddle the wires from the front of the car, where the accelerometer, front LEDs, and start button were - to the back where the arduino, the battery, the charging component, a buzzer and 4 LEDs were. It was a very tight fit :D
 
 
-![](/images/toy-car/01.jpeg "car")
+![](./01.jpeg "car")
 
 I would cut a small piece out of a solderable metal pcb to use to as ground rail, hot glue as many things as I could in place, and use neo stick or instant glue elsewhere.
 
-![](/images/toy-car/02.jpeg "car")
+![](./02.jpeg "car")
 
 
 Had to convince the little guy to bring the car back for "maintenance work", as the charging module was yet hot glued in place and he demanded to play with it none the less :D <3
  
-![](/images/toy-car/06.jpg "car")
+![](./06.jpg "car")
 
 
 

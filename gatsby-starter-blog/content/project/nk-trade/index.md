@@ -16,12 +16,12 @@ Analytics has been added using https://plausible.io/ and an google ad campaign s
 
 ## Mobile website
 
-{{< figure src="/images/nk-trade/mobile01.webp" alt="Home Page" >}}
-{{< figure src="/images/nk-trade/mobile02.webp" alt="Product Page" >}}
-{{< figure src="/images/nk-trade/mobile03.webp" alt="Contact Page" >}}
+{{< figure src="./mobile01.webp" alt="Home Page" >}}
+{{< figure src="./mobile02.webp" alt="Product Page" >}}
+{{< figure src="./mobile03.webp" alt="Contact Page" >}}
 
-{{< figure src="/images/nk-trade/desktop01.webp" alt="Home Page" >}}
-{{< figure src="/images/nk-trade/desktop02.webp" alt="Product Page" >}}
-{{< figure src="/images/nk-trade/desktop03.webp" alt="Contact Page" >}}
+{{< figure src="./desktop01.webp" alt="Home Page" >}}
+{{< figure src="./desktop02.webp" alt="Product Page" >}}
+{{< figure src="./desktop03.webp" alt="Contact Page" >}}
 
 

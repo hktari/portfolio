@@ -2,7 +2,7 @@
 date = 2021-12-10T23:00:00Z
 description = "A toy bomb with timer, explosion and a defuse sequence"
 github = ["https://github.com/hktari/bomb"]
-image = "/images/bomb/bomb12.jpeg"
+image = "./bomb12.jpeg"
 title = "Toy bomb"
 draft = true
 
@@ -20,8 +20,8 @@ First I've thought about having 6 seven segment displays for displaying hours, m
 
 So I've ended up using the [TM1637 display](https://www.amazon.de/-/en/gp/product/B06X952QXS/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) to display minutes and seconds. And a single 7 seg LED placed right next to it to be able to display minutes as a three digit number.
 
-![](/images/bomb/bomb3.jpeg "led display")
-![](/images/bomb/bomb2.jpeg "SN74HC595N")
+![](./bomb3.jpeg "led display")
+![](./bomb2.jpeg "SN74HC595N")
 
 ### The explosion
 
@@ -29,7 +29,7 @@ I've played a lot around with playing wav files from arduino. Using the [TMRpcm]
 
 I ultimately scratched the idea of a speaker and replaced it with a simple balloon and a needle. Attached to a 5v motor, the needle is rotated towards the balloon. Simple and loud. Also the shape of the casing came in handy again, fully enclosing the balloon, holding it in place.
 
-![](/images/bomb/bomb6.jpeg "Homepage Screenshot")
+![](./bomb6.jpeg "Homepage Screenshot")
 
 ### Disarming the bomb
 
@@ -37,15 +37,15 @@ There are three screw terminals on the top of the casing. This was perfect. The 
 
 I've implemented two happy paths in defusing the bomb. If the first wire the player cuts is a wrong one, he or she can still defuse the bomb if the next one he cuts is the right one. All three wires have to be cut in order for the bomb to stop ticking and the green LED to light up.
 
-![](/images/bomb/bomb7.jpeg "screw terminals")
+![](./bomb7.jpeg "screw terminals")
 
 
 
- ![](/images/bomb/bomb4.jpeg "All the electronics are soldered.")
+ ![](./bomb4.jpeg "All the electronics are soldered.")
 
 
 
- ![](/images/bomb/bomb12.jpeg "The bomb is ready.")
+ ![](./bomb12.jpeg "The bomb is ready.")
 
 
 {{< video "/videos/bomb active.mp4" "my-5" >}}
