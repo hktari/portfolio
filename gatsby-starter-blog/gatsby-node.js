@@ -6,6 +6,7 @@
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const util = require('util');
 
 // Define the template for blog post
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
@@ -19,7 +20,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+      allMarkdownRemark( sort: { frontmatter: { date: ASC } }, limit: 1000) {
         nodes {
           id
           fields {
@@ -62,6 +63,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 }
 
+// extracts 'test' from a file path string like '/home/hktari/source/web/portfolio/gatsby-starter-blog/content/test/projects/tinefrizer.md'
+const extractContentTypeFromFilePath = (filePath) => {
+
+  const matchFirstFolderAfterContent = /\/content\/([\w]*)\//
+  const match = filePath.match(matchFirstFolderAfterContent)
+
+  if (!match) {
+    return undefined
+  }
+  const contentType = match[1]
+
+  return contentType
+}
+
 /**
  * @type {import('gatsby').GatsbyNode['onCreateNode']}
  */
@@ -69,12 +84,28 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const contentSlug = createFilePath({ node, getNode })
 
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: contentSlug,
+    })
+
+    const contentType = extractContentTypeFromFilePath(node.fileAbsolutePath)
+
+    if (!contentType) {
+      reporter.panicOnBuild(
+        `Failed to extract content type of the given file: ${node.fileAbsolutePath}. Make sure your content files are inside a subfolder of the 'content' folder.`,
+        node
+      )
+      return
+    }
+
+    createNodeField({
+      name: `contentType`,
+      node,
+      value: contentType,
     })
   }
 }
@@ -111,14 +142,15 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
       fields: Fields
     }
-
+    
     type Frontmatter {
       title: String
       description: String
       date: Date @dateformat
     }
-
+    
     type Fields {
+      contentType: String
       slug: String
     }
   `)
