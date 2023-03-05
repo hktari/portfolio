@@ -11,20 +11,19 @@ const util = require('util');
 // Define the template for blog post
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
-/**
- * @type {import('gatsby').GatsbyNode['createPages']}
- */
-exports.createPages = async ({ graphql, actions, reporter }) => {
+const createMarkdownPages = async (contentType, componentType, createContext, { graphql, actions, reporter }) => {
+
   const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
     {
-      allMarkdownRemark( sort: { frontmatter: { date: ASC } }, limit: 1000) {
+      allMarkdownRemark( filter: {fields: {contentType: {eq: "${contentType}"}}}, sort: { frontmatter: { date: ASC } }, limit: 1000) {
         nodes {
           id
           fields {
             slug
+            contentType
           }
         }
       }
@@ -33,34 +32,50 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (result.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
+      `There was an error loading your content of type ${contentType}`,
       result.errors
     )
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const contentNodes = result.data.allMarkdownRemark.nodes
 
-  // Create blog posts pages
+  // Create blog posts pages and project pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
+  if (contentNodes.length > 0) {
+    contentNodes.forEach((curNode, index) => {
       createPage({
-        path: post.fields.slug,
-        component: blogPost,
+        path: curNode.fields.slug,
+        component: componentType,
         context: {
-          id: post.id,
-          previousPostId,
-          nextPostId,
+          id: curNode.id,
+          ...createContext(curNode, index, contentNodes)
         },
       })
     })
   }
+}
+
+
+/**
+ * @type {import('gatsby').GatsbyNode['createPages']}
+ */
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  await createMarkdownPages(
+    'blog',
+    blogPost,
+    (node, index, allNodes) => {
+      const previousPostId = index === 0 ? null : allNodes[index - 1].id
+      const nextPostId = index === allNodes.length - 1 ? null : allNodes[index + 1].id
+      return {
+        previousPostId,
+        nextPostId
+      }
+    }, { graphql, actions, reporter })
+
+
 }
 
 // extracts 'test' from a file path string like '/home/hktari/source/web/portfolio/gatsby-starter-blog/content/test/projects/tinefrizer.md'
