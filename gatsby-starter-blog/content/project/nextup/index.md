@@ -23,10 +23,10 @@ The app features:
 
 ## Mobile website
 
-{{< figure src="/images/nextup/mobile01.webp" alt="Home Page" >}}
-{{< figure src="/images/nextup/mobile02.webp" alt="Event Detail page" >}}
-{{< figure src="/images/nextup/mobile03.webp" alt="Home Page" >}}
-{{< figure src="/images/nextup/desktop01.webp" alt="Home Page" >}}
-{{< figure src="/images/nextup/desktop02.webp" alt="Event Managemnt Page" >}}
+![Home Page](./mobile01.webp)
+![Event Detail page](./mobile02.webp)
+![Home Page](./mobile03.webp)
+![Home Page](./desktop01.webp)
+![Event Managemnt Page](./desktop02.webp)
 
 
