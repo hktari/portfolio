@@ -4,7 +4,7 @@ categories: ['web-dev']
 description: "A business web site for a blacksmith"
 image: images/fireofnorik/fireofnorik-logo.webp
 websiteUrl: https://fireofnorik.com/
-date: 2024-29-01T13:54:50+02:00
+date: 2024-01-29T13:54:50+02:00
 draft: false
 ---
 

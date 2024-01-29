@@ -4,7 +4,7 @@ categories: ['web-dev']
 description: "An event posting and discovery app"
 image: images/nextup/logo.webp
 github: [https://github.com/hktari/skillup-03-nextup-frontend, https://github.com/hktari/skillup-03-nextup-backend]
-date: 2022-10-03T13:54:50+02:00
+date: 2023-10-03T13:54:50+02:00
 draft: false
 ---
 
