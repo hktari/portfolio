@@ -1,11 +1,11 @@
 ---
 title: "Automation Assistant"
 categories: ['web-dev']
-description: "An application performing automation actions on a specific website"
+description: "Website automation application"
 image: images/automation-assistant/logo.webp
 websiteUrl: https://moderkorencek.netlify.app/
 github: []
-date: 2024-02-05T13:54:50+02:00
+date: 2024-01-01T13:54:50+02:00
 draft: false
 ---
 
@@ -23,8 +23,10 @@ It is deployed using docker to a VPS. The frontend is hosted on Netlify.
 ## Mobile website
 
 {{< figure src="/images/automation-assistant/mobile-login.webp" alt="Login Page" >}}
+
 {{< figure src="/images/automation-assistant/mobile-dashboard.webp" alt="Dashboard Page" >}}
 {{< figure src="/images/automation-assistant/mobile-configurations.webp" alt="Configuration Page" >}}
 {{< figure src="/images/automation-assistant/mobile-calendar.webp" alt="Calendar on the Configuration Page" >}}
+
 
 
