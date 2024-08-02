@@ -30,22 +30,22 @@ tech stack:
 
 ## Desktop
 
-{{< figure src="/images/ss-creations/desktop02.jpg" alt="Explore With Me Page" >}}
-{{< figure src="/images/ss-creations/desktop03.jpg" alt="Sign Up Form" >}}
-{{< figure src="/images/ss-creations/desktop04.jpg" alt="About Me Section" >}}
+{{< screenshot src="/images/ss-creations/desktop02.jpg" alt="Explore With Me Page" >}}
+{{< screenshot src="/images/ss-creations/desktop03.jpg" alt="Sign Up Form" >}}
+{{< screenshot src="/images/ss-creations/desktop04.jpg" alt="About Me Section" >}}
 
 ## Mobile
 
-{{< figure src="/images/ss-creations/mobile01.jpg" alt="Home Page" >}}
-{{< figure src="/images/ss-creations/mobile02.jpg" alt="Coaching Page" >}}
+{{< screenshot src="/images/ss-creations/mobile01.jpg" alt="Home Page" >}}
+{{< screenshot src="/images/ss-creations/mobile02.jpg" alt="Coaching Page" >}}
 
 ## CMS
 
-{{< figure src="/images/ss-creations/cms01.jpg" alt="Home Page" caption="home page editor" >}}
-{{< figure src="/images/ss-creations/cms02.jpg" alt="Coaching Page" caption="product editor" >}}
+{{< screenshot src="/images/ss-creations/cms01.jpg" alt="Home Page" caption="home page editor" >}}
+{{< screenshot src="/images/ss-creations/cms02.jpg" alt="Coaching Page" caption="product editor" >}}
 
 ## E-Commerce
-{{< figure src="/images/ss-creations/cms03.jpg" alt="Stripe Invoices" caption="managing invoices" >}}
-{{< figure src="/images/ss-creations/cms04.jpg" alt="Coaching Page" caption="customer details" >}}
-{{< figure src="/images/ss-creations/cms05.jpg" alt="Coaching Page" caption="product management" >}}
+{{< screenshot src="/images/ss-creations/cms03.jpg" alt="Stripe Invoices" caption="managing invoices" >}}
+{{< screenshot src="/images/ss-creations/cms04.jpg" alt="Coaching Page" caption="customer details" >}}
+{{< screenshot src="/images/ss-creations/cms05.jpg" alt="Coaching Page" caption="product management" >}}
 

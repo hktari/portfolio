@@ -1,0 +1,6 @@
+{{ $alt:= .Get "alt"}} {{$src := .Get "src"}} {{$caption := .Get "caption"}}
+
+<figure class="c-screenshot">
+  <img src="{{ $src }}" alt='{{ .Get "alt" }}' />
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
