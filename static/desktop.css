@@ -334,6 +334,30 @@ p {
     margin: auto
 }
 
+figure{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+figure:first-child{
+    margin-top: 0;
+}
+
+figcaption{
+    
+    font-size: 14px;
+    color: #4a4a4a;
+    align-self: flex-start;
+    font-weight: bold;
+    
+}
+figcaption p{
+    padding: 0;
+}
+
 
 /* --------------------------------- footer --------------------------------- */
 
