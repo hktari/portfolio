@@ -4,6 +4,11 @@ categories: ["web-dev"]
 description: "A life coaching focused on personal development website"
 image: images/ss-creations/logo.webp
 websiteUrl: https://saraskorjanc.netlify.app/
+github:
+  [
+    "https://github.com/hktari/ss-creations-frontend",
+    "https://github.com/hktari/ss-creations-backend",
+  ]
 date: 2024-08-02T09:54:56+02:00
 draft: false
 ---
@@ -45,7 +50,7 @@ tech stack:
 {{< screenshot src="/images/ss-creations/cms02.jpg" alt="Coaching Page" caption="product editor" >}}
 
 ## E-Commerce
+
 {{< screenshot src="/images/ss-creations/cms03.jpg" alt="Stripe Invoices" caption="managing invoices" >}}
 {{< screenshot src="/images/ss-creations/cms04.jpg" alt="Coaching Page" caption="customer details" >}}
 {{< screenshot src="/images/ss-creations/cms05.jpg" alt="Coaching Page" caption="product management" >}}
-
