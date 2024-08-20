@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Mulish&display=swap');
 
-:root {
-  --light-yellow: #f5cf95;
-}
-
 h1,
 h2,
 h3,
@@ -66,16 +62,22 @@ body {
 }
 
 .nav-item a {
+  box-sizing: border-box;
+  border: 3px solid transparent;
   border-radius: 2px 2px 0 0;
   border-bottom: 6px solid #4a4a4a3b !important;
   color: #4a4a4a8a;
   font-weight: 700;
   font-family: 'Mulish', sans-serif;
+
+  transition: all 0.25s cubic-bezier(0.2, 0.6, 1, 1);
 }
 
-.header--infocus .nav-item a {
-  background-color: var(--light-yellow);
-  color: #4a4a4a;
+.header--infocus .nav-item a,
+.header--infocus .nav-item.nav-item--active a {
+  border-color: #fff;
+  background-color: #b95348;
+  color: #ffffff;
 }
 
 .nav-item:hover a {
