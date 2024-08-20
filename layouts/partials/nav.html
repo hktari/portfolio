@@ -28,18 +28,17 @@
     </div>
     <nav class="w3-content w3-center">
         <ul class="w3-bar">
-            <li class="w3-bar-item">
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button nav-item 
-                {{if .Page.IsHome }} nav-item-active {{end}}" href="/">Boštjan Kamnik
+            <li class="nav-item w3-bar-item {{if .Page.IsHome }} nav-item--active {{end}}">
+                <a class="text-bold w3-button" href="/">Boštjan Kamnik
                 </a>
             </li>
-            <li class="w3-bar-item ">
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button nav-item 
-                {{if (in .Page.Permalink "projects") }} nav-item-active {{end}}" href="/projects">projects</a>
+            <li class="w3-bar-item nav-item 
+            {{if (in .Page.Permalink "projects") }} nav-item--active {{end}}">
+                <a  class="text-bold w3-button" href="/projects">projects</a>
             
             </li>
-            <li class="w3-bar-item ">
-                <a onmouseenter="navMouseEntered()" onmouseleave="navMouseLeft()" class="text-bold w3-button nav-item" href="/#contact">contact</a>
+            <li class="w3-bar-item nav-item">
+                <a class="text-bold w3-button" href="/#contact">contact</a>
             </li>
         </ul>
     </nav>
