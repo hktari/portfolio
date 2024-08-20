@@ -37,15 +37,12 @@ $(document).ready(function () {
     }, 250);
 
     function hasScrolled() {
-        console.log('ping')
-
         let [, st] = document.getScroll()
 
         // Make sure they scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
 
-        console.log('pong')
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight) {
@@ -68,11 +65,9 @@ $(document).ready(function () {
 
 function navMouseEntered() {
     document.querySelector('.nav-bg-img-wrapper img').classList.add('bg-focused');
-    console.log('enter');
 }
 
 function navMouseLeft() {
-    console.log('left');
     document.querySelector('.nav-bg-img-wrapper img').classList.remove('bg-focused');
 }
 
