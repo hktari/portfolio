@@ -61,15 +61,15 @@ $(document).ready(function () {
 
   /* ------------------------------- navigation effects ------------------------------- */
 
-  const navigationBg = document.querySelector('.nav-bg-img-wrapper img');
+  const header = document.querySelector('header.header');
 
   document.querySelectorAll('.nav-item').forEach((navItem) => {
     debugger;
     navItem.addEventListener('mouseenter', () =>
-      navigationBg.classList.add('bg-focused')
+      header.classList.add('header--infocus')
     );
     navItem.addEventListener('mouseleave', () =>
-      navigationBg.classList.remove('bg-focused')
+      header.classList.remove('header--infocus')
     );
   });
 });
